@@ -111,5 +111,6 @@ The repository is maintained at
 
 ## License
 
-No license is granted for redistribution of the manuscript or the benchmark
-code beyond viewing on GitHub; contact the authors for reuse.
+No separate license file is included in this release; all rights are reserved by
+the authors. Please contact the authors before reusing the code or the
+manuscript.
