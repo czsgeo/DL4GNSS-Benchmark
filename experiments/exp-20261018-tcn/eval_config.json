@@ -1,0 +1,68 @@
+{
+  "exp_id": "exp-20261018-tcn-eval",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "stations_csv": "experiments/exp-20261008-data-prep/data/stations.csv",
+  "ngl_holdings": "experiments/exp-20261008-data-prep/data/ngl_holdings.txt",
+  "use_split": "test",
+  "components": [
+    0,
+    1,
+    2
+  ],
+  "denoise": {
+    "max_stations": 10,
+    "n_realisations": 2
+  },
+  "impute": {
+    "max_stations": 10,
+    "gap_lengths_days": [
+      5,
+      30,
+      120
+    ],
+    "n_gaps": 2
+  },
+  "detect": {
+    "max_stations": 8,
+    "amplitudes_mm": [
+      2,
+      4,
+      8,
+      16,
+      25
+    ],
+    "n_realisations": 1,
+    "n_offsets": 2,
+    "min_sep_years": 2.0,
+    "tol_days": 30,
+    "min_sep_days": 45,
+    "thresholds": [
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      5,
+      6,
+      7.5,
+      9,
+      11,
+      13,
+      16,
+      20,
+      25,
+      30
+    ],
+    "val_splits": 20
+  },
+  "noise": {
+    "sigma_wn_mm": 1.5,
+    "sigma_fn_mm": 3.0,
+    "sigma_rw_mm": 0.0
+  },
+  "unet_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "tcn_dir": "experiments/exp-20261018-tcn/nets",
+  "seed": 20261007,
+  "inference": "per_window (each window standardised by its own statistics, matching training)"
+}

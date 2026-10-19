@@ -1,0 +1,35 @@
+A GNSS station velocity is only as defensible as the coloured-noise model behind
+its uncertainty, yet deep learning is now proposed for every step of the
+coordinate-series pipeline and is usually judged by signal-recovery error alone.
+We build a reproducible benchmark on 333 daily coordinate series from 321 sites,
+with a station-level split, frozen station lists, fixed seeds and injected
+white-plus-flicker noise, and we score classical and learned methods on
+denoising, gap filling and offset detection and then on the published product,
+the secular velocity and its uncertainty. The protocol removes three confounds of
+an earlier version: the ground truth is drawn from both an in-family and an
+out-of-family signal, the network is evaluated under the normalisation used in
+training, and detection is scored against real catalogue labels as well as
+injected offsets. The verdict is task-specific. The parametric trajectory model
+removes $0.790$ of the injected denoising error when the truth lies in its basis
+but adds error ($-0.106$) when it does not; the learned denoiser is nearly
+family-invariant ($0.366$ and $0.363$) and, with per-window inference, beats
+every model-free decomposition in both truth families, though not the
+parametric estimator when the truth lies in its basis. With per-window inference the learned gap filler is
+the best method at 30-day synthetic gaps ($3.07$~mm), but on the full held-out
+real set it ties linear interpolation on NGL ($2.964$ against $2.967$~mm) and
+falls $0.06$~mm behind it on JPL, while the trajectory model remains best at
+120 days. The learned
+detector has higher average precision at 16--25~mm offsets but a lower
+validation-selected $F_1$ at every amplitude, and on 1\,743 real catalogue labels
+it averages $0.232$ (U-Net) and $0.273$ (TCN) against $0.457$ for the classical
+detector, with four of thirty seeds collapsing. Downstream, no method improves the velocity: with protocol-matched
+inference the learned denoiser reaches $0.0605$~mm\,yr$^{-1}$ and the learned
+imputer $0.0586$, against $0.0586$--$0.0616$ for the untreated series and the
+classical denoisers, and calibration stays near $0.65$ for all of them. The
+factor-of-$3.6$ degradation and calibration collapse reported in the earlier
+version were produced by whole-series normalisation. Adding a random-walk
+component lowers absolute accuracy for every method without changing the
+ordering. Learned gap filling at intermediate gaps is competitive on synthetic
+records and no better than interpolation on the full real set; learned
+denoising upstream of a velocity and noise fit is neither an improvement nor a
+penalty.

@@ -1,0 +1,3070 @@
+{
+  "paper": "DL4GNSS-Benchmark v2.0 (Journal of Geodesy)",
+  "note": "Every value is the literal token quoted in the manuscript. Sources are relative to submission/v2 (the quality-gate root). Derived values name the upstream results file and the derivation in 'note'.",
+  "numbers": {
+    "n_series": {
+      "value": "333",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "results.n_series_kept",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "n_sites": {
+      "value": "321",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "n_stations_kept",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "n_ngl_series": {
+      "value": "298",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "n_ngl",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "n_jpl_series": {
+      "value": "35",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "n_jpl",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "n_dual_source_sites": {
+      "value": "12",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "n_dual_source_sites",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "span_min_years": {
+      "value": "5.87",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "span_years.min, rounded",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "span_median_years": {
+      "value": "30.03",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "span_years.median, rounded",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "span_max_years": {
+      "value": "30.64",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "span_years.max, rounded",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "completeness_min": {
+      "value": "0.500",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "completeness.min, rounded to 3 dp",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "completeness_median": {
+      "value": "0.972",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "completeness.median, rounded to 3 dp",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "completeness_max": {
+      "value": "0.997",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "completeness.max, rounded to 3 dp",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "t_begin_year": {
+      "value": "1994.00",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "t_begin = 1994.0014, quoted to 2 dp",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "t_end_year": {
+      "value": "2024.65",
+      "source": "../../experiments/exp-20261008-data-prep/results.json",
+      "note": "t_end = 2024.6461, quoted to 2 dp",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/results.json": "8d7c582362f6a273097dd8fd8dddbcb7732747e4048c6999c79cad2452b1d66d"
+      }
+    },
+    "train_series": {
+      "value": "198",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.train.n_series",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "val_series": {
+      "value": "68",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.val.n_series",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "test_series": {
+      "value": "67",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.test.n_series",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "train_sites": {
+      "value": "193",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.train.n_sites",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "val_sites": {
+      "value": "64",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.val.n_sites",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "test_sites": {
+      "value": "64",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.test.n_sites",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "train_epochs": {
+      "value": "1\\,907\\,614",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.train.n_epochs",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "val_epochs": {
+      "value": "651\\,833",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.val.n_epochs",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "test_epochs": {
+      "value": "647\\,892",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.test.n_epochs",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "test_ngl_series": {
+      "value": "61",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.test.series_by_source.ngl",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "test_jpl_series": {
+      "value": "6",
+      "source": "../../experiments/exp-20261008-data-prep/split-summary.json",
+      "note": "folds.test.series_by_source.jpl",
+      "sha256": {
+        "../../experiments/exp-20261008-data-prep/split-summary.json": "e38ae8293095dcbc8b1791bbed85244a62abdad419a4d360117c018c330222c9"
+      }
+    },
+    "catalogue_lines": {
+      "value": "142\\,625",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "catalog.lines_used",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "catalogue_sha256": {
+      "value": "49894f7566ed34da3eb646087fc2fc64c5766720ba2368a3f6f6df53f3f282d8",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "catalog.sha256 of NGL steps.txt downloaded 2026-10-18",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_labels": {
+      "value": "1\\,743",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_labels",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_label_component_series": {
+      "value": "153",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_component_series",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_label_stations": {
+      "value": "58",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_stations_with_labels",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_code1": {
+      "value": "52",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_by_code.1",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_code2": {
+      "value": "1\\,691",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_by_code.2",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "labels_east": {
+      "value": "1006",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_by_component.0",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "labels_north": {
+      "value": "528",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_by_component.1",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "labels_up": {
+      "value": "209",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.n_by_component.2",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "label_amp_median": {
+      "value": "-6.23",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.amp_mm_median, rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "label_amp_iqr_lo": {
+      "value": "-17.79",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.amp_mm_iqr[0], rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "label_amp_iqr_hi": {
+      "value": "11.61",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "labels.amp_mm_iqr[1], rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "n_component_series": {
+      "value": "999",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "n_series = 333 series x 3 components",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_wn_median": {
+      "value": "1.90",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_wn.median = 1.9023",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_wn_q25": {
+      "value": "1.39",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_wn.q25 = 1.3923",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_wn_q75": {
+      "value": "3.67",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_wn.q75 = 3.6750",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_fn_median": {
+      "value": "2.26",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_fn.median = 2.2582",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_fn_q25": {
+      "value": "1.61",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_fn.q25 = 1.6098",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_fn_q75": {
+      "value": "5.74",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_fn.q75 = 5.7398",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "station_rw_median": {
+      "value": "10.29",
+      "source": "../../experiments/exp-20261018-station-noise/results.json",
+      "note": "by_component.all.sigma_rw.median = 10.2884 (upper bound)",
+      "sha256": {
+        "../../experiments/exp-20261018-station-noise/results.json": "b28092aab0667378b112394e85a3b4be6759d24a60de9472576f87935b8dabbc"
+      }
+    },
+    "unet_params": {
+      "value": "213\\,385",
+      "source": "../../experiments/arch-summary.json",
+      "note": "unet.n_params from saved state_dict",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "unet_wall": {
+      "value": "8~min",
+      "source": "../../experiments/arch-summary.json",
+      "note": "unet.wall_s_median = 493.4 s on one V100",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "tcn_params": {
+      "value": "227\\,537",
+      "source": "../../experiments/arch-summary.json",
+      "note": "tcn.n_params from saved state_dict",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "tcn_wall": {
+      "value": "6~min",
+      "source": "../../experiments/arch-summary.json",
+      "note": "tcn.wall_s_median = 328.67 s over 30 checkpoints; detection subset 354.1 s (5.9 min), quoted as 6 min",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "gru_params": {
+      "value": "182\\,785",
+      "source": "../../experiments/arch-summary.json",
+      "note": "gru.n_params = 182785 from saved state_dict",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "training_steps": {
+      "value": "3000",
+      "source": "../../experiments/arch-summary.json",
+      "note": "training_budget.n_steps",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "batch_size": {
+      "value": "32",
+      "source": "../../experiments/arch-summary.json",
+      "note": "training_budget.batch",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "window_days": {
+      "value": "1024",
+      "source": "../../experiments/arch-summary.json",
+      "note": "training_budget.window_days",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "wn_max_rel_departure": {
+      "value": "0.0197",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "max |part_a.wn_bias| over the swept grid",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "fn_median_rel_bias": {
+      "value": "-0.0377",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "median part_a.fn_bias over non-null cells",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "calib_length_days": {
+      "value": "3650",
+      "source": "../../experiments/exp-20261008-synth-harness/config.json",
+      "note": "config.n",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/config.json": "0ba41f2c9da5695fec6b1aa739ea8d4a21e06df58ac829438444832136eea8c3"
+      }
+    },
+    "empirical_velocity_scatter": {
+      "value": "0.1613",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "part_b.empirical_sigma_v = 0.16133",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "reported_velocity_uncertainty": {
+      "value": "0.1615",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "part_b.predicted_sigma_v_median = 0.16150",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "harness_calibration_ratio": {
+      "value": "1.0011",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "part_b.ratio_pred_over_emp = 1.00107",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "harness_calibration_tolerance": {
+      "value": "0.1\\%",
+      "source": "../../experiments/exp-20261008-synth-harness/results.json",
+      "note": "|1.00107 - 1| = 0.107%, quoted as better than 0.1%",
+      "sha256": {
+        "../../experiments/exp-20261008-synth-harness/results.json": "ce8e8ac60dc8dfc944338e006ecb9edbaf2d62bd5091bd4336a01b8b3cccfac6"
+      }
+    },
+    "t1_mle_in": {
+      "value": "0.790",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.mle.reduction_mean = 0.79026",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_mle_in_ci_lo": {
+      "value": "0.776",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.mle.ci_lo = 0.77574",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_mle_in_ci_hi": {
+      "value": "0.804",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.mle.ci_hi = 0.80446",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_rts_in": {
+      "value": "0.791",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.rts.reduction_mean = 0.79086",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_wavelet_in": {
+      "value": "0.349",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.wavelet.reduction_mean = 0.34929",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_median_in": {
+      "value": "0.293",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.median.reduction_mean = 0.29315",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_ssa_in": {
+      "value": "0.232",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_in.ssa.reduction_mean = 0.23154",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_unet_in": {
+      "value": "0.366",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.hybrid_in.unet_in.mean = 0.36620 over 10 seeds, per-window inference",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_unet_in_std": {
+      "value": "0.002",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.hybrid_in.unet_in.std = 0.001937",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_mle_oof": {
+      "value": "-0.106",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.mle.reduction_mean = -0.10579",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_mle_oof_ci_lo": {
+      "value": "-0.434",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.mle.ci_lo = -0.43355",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_mle_oof_ci_hi": {
+      "value": "0.181",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.mle.ci_hi = 0.18129",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_rts_oof": {
+      "value": "-0.104",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.rts.reduction_mean = -0.10385",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_wavelet_oof": {
+      "value": "0.345",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.wavelet.reduction_mean = 0.34521",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_median_oof": {
+      "value": "0.292",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.median.reduction_mean = 0.29230",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_ssa_oof": {
+      "value": "0.231",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.hybrid_oof.ssa.reduction_mean = 0.23080",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_unet_oof": {
+      "value": "0.363",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.hybrid_oof.unet_oof.mean = 0.36290",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_unet_oof_std": {
+      "value": "0.001",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.hybrid_oof.unet_oof.std = 0.000609",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_synth_in_mle": {
+      "value": "0.624",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_in.mle.reduction_mean = 0.62393",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_synth_in_unet": {
+      "value": "0.389",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.synth_in.unet_in.mean = 0.38935",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_synth_in_unet_std": {
+      "value": "0.001",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.synth_in.unet_in.std = 0.001015",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_synth_oof_mle": {
+      "value": "-1.211",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_oof.mle.reduction_mean = -1.21062",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_synth_oof_unet": {
+      "value": "0.381",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.synth_oof.unet_oof.mean = 0.38120",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_synth_oof_unet_std": {
+      "value": "0.001",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "regimes.synth_oof.unet_oof.std = 0.000716",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "t1_synth_in_median": {
+      "value": "0.320",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_in.median.reduction_mean = 0.32023",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_synth_in_wavelet": {
+      "value": "0.317",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_in.wavelet.reduction_mean = 0.31742",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_synth_oof_median": {
+      "value": "0.318",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_oof.median.reduction_mean = 0.31771",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_synth_oof_wavelet": {
+      "value": "0.312",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_oof.wavelet.reduction_mean = 0.31177",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t2_n_long_series": {
+      "value": "40",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.*.n",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_n_real_series": {
+      "value": "30",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.*.n",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_5_linear": {
+      "value": "2.69",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.5.global.linear.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_5_pchip": {
+      "value": "2.80",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.5.global.pchip.mean = 2.804",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_5_ssa": {
+      "value": "2.57",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.5.global.ssa.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_5_mle": {
+      "value": "3.41",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.5.global.mle.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_5_unet": {
+      "value": "2.80",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.5.perwin.mean = 2.7990",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_5_unet_std": {
+      "value": "0.06",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.5.perwin.std = 0.0599",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_30_unet": {
+      "value": "3.07",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.30.perwin.mean = 3.0687",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_30_unet_std": {
+      "value": "0.03",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.30.perwin.std = 0.0251",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_30_linear": {
+      "value": "3.34",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.30.global.linear.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_30_ssa": {
+      "value": "3.37",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.30.global.ssa.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_30_pchip": {
+      "value": "3.59",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.30.global.pchip.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_30_mle": {
+      "value": "3.79",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.30.global.mle.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_120_mle": {
+      "value": "3.99",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "longseries.impute.120.global.mle.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_long_120_unet": {
+      "value": "5.09",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.120.perwin.mean = 5.0948",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_120_unet_std": {
+      "value": "0.08",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.120.perwin.std = 0.0776",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_5_global": {
+      "value": "4.52",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.5.global.mean = 4.5205",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_5_global_std": {
+      "value": "0.54",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.5.global.std = 0.5390",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_30_global": {
+      "value": "3.55",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.30.global.mean = 3.5523",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_30_global_std": {
+      "value": "0.14",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.30.global.std = 0.1423",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_120_global": {
+      "value": "7.59",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.120.global.mean = 7.5868",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_long_120_global_std": {
+      "value": "0.26",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "longseries.120.global.std = 0.2585",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_5_linear": {
+      "value": "2.65",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.5.global.linear.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_5_pchip": {
+      "value": "2.76",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.5.global.pchip.mean = 2.757",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_5_ssa": {
+      "value": "2.51",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.5.global.ssa.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_5_mle": {
+      "value": "3.16",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.5.global.mle.mean = 3.156",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_5_unet": {
+      "value": "2.55",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.5.perwin.mean = 2.5565",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_5_unet_std": {
+      "value": "0.03",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.5.perwin.std = 0.0328",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_30_linear": {
+      "value": "2.93",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.30.global.linear.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_30_pchip": {
+      "value": "3.10",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.30.global.pchip.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_30_ssa": {
+      "value": "2.97",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.30.global.ssa.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_30_mle": {
+      "value": "3.35",
+      "source": "../../experiments/exp-20261009-in-distribution/results.json",
+      "note": "real.impute.30.global.mle.mean",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/results.json": "be0637490e1de9f5816b4ee20e51c76c165a594c43b5e9f1c6183b5f49f922ff"
+      }
+    },
+    "t2_real_30_unet": {
+      "value": "2.74",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.30.perwin.mean = 2.7436",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_30_unet_std": {
+      "value": "0.03",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.30.perwin.std = 0.0325",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_5_global": {
+      "value": "9.98",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.5.global.mean = 9.9835",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_5_global_std": {
+      "value": "1.80",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.5.global.std = 1.8014",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_30_global": {
+      "value": "6.16",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.30.global.mean = 6.1631",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_real_30_global_std": {
+      "value": "0.60",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "real.30.global.std = 0.6002",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_rise_5_to_30": {
+      "value": "0.3",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "derived: max per-window rise 3.0687-2.7990 = 0.27 mm (long series)",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_gap_long_5": {
+      "value": "1.7",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "derived: 4.5205-2.7990 = 1.72 mm",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_gap_real_5": {
+      "value": "7.4",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "derived: 9.9835-2.5565 = 7.43 mm",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_signal_mle_5": {
+      "value": "0.74",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.5.mle.rmse_signal = 0.7401",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_mle_30": {
+      "value": "0.68",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.30.mle.rmse_signal = 0.6792",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_mle_120": {
+      "value": "0.78",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.120.mle.rmse_signal = 0.781",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_unet_5": {
+      "value": "11.40",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.5.unet.rmse_signal = 11.396",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_unet_30": {
+      "value": "5.97",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.30.unet.rmse_signal = 5.971",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_unet_120": {
+      "value": "10.26",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.120.unet.rmse_signal = 10.26",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t2_signal_unet_365": {
+      "value": "61.0",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "impute.365.unet.rmse_signal = 61.0",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "t3_ap_classical_2": {
+      "value": "0.032",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.2.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_unet_2": {
+      "value": "0.0000",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.2.learned.ap_seed_mean = 2.1e-6, quoted as 0.0000",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_classical_2": {
+      "value": "0.073",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.2.classical.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_2": {
+      "value": "0.0005",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.2.learned.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_2_std": {
+      "value": "0.002",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.2.learned.validator_selected_f1_std = 0.0019",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_classical_4": {
+      "value": "0.143",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.4.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_unet_4": {
+      "value": "0.0028",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.4.learned.ap_seed_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_classical_4": {
+      "value": "0.259",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.4.classical.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_4": {
+      "value": "0.039",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.4.learned.validator_selected_f1_mean = 0.03949",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_4_std": {
+      "value": "0.024",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.4.learned.validator_selected_f1_std = 0.0243",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_classical_8": {
+      "value": "0.788",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.8.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_unet_8": {
+      "value": "0.298",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.8.learned.ap_seed_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_classical_8": {
+      "value": "0.815",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.8.classical.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_8": {
+      "value": "0.460",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.8.learned.validator_selected_f1_mean = 0.45987",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_8_std": {
+      "value": "0.222",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.8.learned.validator_selected_f1_std = 0.22184",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_classical_16": {
+      "value": "0.208",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.16.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_unet_16": {
+      "value": "0.648",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.16.learned.ap_seed_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_classical_16": {
+      "value": "0.963",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.16.classical.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_16": {
+      "value": "0.709",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.16.learned.validator_selected_f1_mean = 0.70886",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_16_std": {
+      "value": "0.334",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.16.learned.validator_selected_f1_std = 0.33414",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_classical_25": {
+      "value": "0.007",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.25.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_ap_unet_25": {
+      "value": "0.669",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "detect.25.learned.ap_seed_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_classical_25": {
+      "value": "0.975",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.25.classical.validator_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_25": {
+      "value": "0.725",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.25.learned.validator_selected_f1_mean = 0.72523",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "t3_f1_unet_25_std": {
+      "value": "0.341",
+      "source": "../../experiments/exp-20261009-detector-fair/results.json",
+      "note": "validation_selection.25.learned.validator_selected_f1_std = 0.34138",
+      "sha256": {
+        "../../experiments/exp-20261009-detector-fair/results.json": "e94b4d8768be1db51adfbdb8b0c91f6f3d1545ea21518c2e61b3cd5dcffcc6e2"
+      }
+    },
+    "real_f1_classical": {
+      "value": "0.457",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.val_selected_f1_mean = 0.45655",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_classical_std": {
+      "value": "0.027",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "fold-level std of the classical F1, 0.0271",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_ap_classical": {
+      "value": "0.322",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.ap",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_precision_classical": {
+      "value": "0.490",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.precision_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_classical": {
+      "value": "0.536",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.recall_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_snr_3_5": {
+      "value": "0.398",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.recall_by_snr.3-5",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_snr_5_10": {
+      "value": "0.610",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.recall_by_snr.5-10",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_snr_10": {
+      "value": "0.848",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.recall_by_snr.>10",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_delay_signed_classical": {
+      "value": "-51.5",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.delay_median_days_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_delay_abs_classical": {
+      "value": "69.7",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "detection.summary.classical.delay_abs_median_days_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_unet": {
+      "value": "0.232",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "unet_val_selected_f1.mean = 0.23235 over 20 seeds",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_f1_unet_std": {
+      "value": "0.107",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "unet_val_selected_f1.std = 0.10738 (population, ddof=0, over 20 seeds)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_ap_unet": {
+      "value": "0.135",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 20 U-Net seeds of ap = 0.13481",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_precision_unet": {
+      "value": "0.329",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 20 U-Net seeds of precision_mean = 0.32874",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_unet": {
+      "value": "0.302",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 20 U-Net seeds of recall_mean = 0.30241",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_collapsed_seeds": {
+      "value": "3",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "unet_collapsed_seeds (F1 < 0.01)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_collapse_f1_a": {
+      "value": "0.0000",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "collapsed U-Net seed F1 = 0.0",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_collapse_f1_b": {
+      "value": "0.0002",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "collapsed U-Net seed F1 = 0.0002035",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_collapse_f1_c": {
+      "value": "0.0004",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "collapsed U-Net seed F1 = 0.0003554",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_median_seed_f1": {
+      "value": "0.290",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "median over 20 U-Net seeds = 0.28957",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_best_seed_f1": {
+      "value": "0.316",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "max over 20 U-Net seeds = 0.31614",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_delay_range_lo": {
+      "value": "16.5",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "unet_delay_abs_median_days_range[0] = 16.506 (F1>=0.01 seeds)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_delay_range_hi": {
+      "value": "52.1",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "unet_delay_abs_median_days_range[1] = 52.107 (F1>=0.01 seeds)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_signed_delay_lo": {
+      "value": "-18.3",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "min delay_median_days_mean over 17 U-Net seeds with F1>=0.01 = -18.253",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_signed_delay_hi": {
+      "value": "1.0",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "max delay_median_days_mean over 17 U-Net seeds with F1>=0.01 = 0.992",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "down_n_stations": {
+      "value": "6",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "n_stations",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_n_components": {
+      "value": "2",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "protocol.components",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_n_realisations": {
+      "value": "3",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "n_seeds = realisations",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_n_draws": {
+      "value": "36",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "n = 36 draws (6 stations x 2 components x 3 realisations)",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_sigma_rw": {
+      "value": "1.0",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw noise level sigma_rw = 1.0",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_bias_raw": {
+      "value": "-0.0024",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw orig vel_bias_mm_yr = -0.002371",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_raw": {
+      "value": "0.0586",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw orig vel_rmse_mm_yr = 0.058572",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_ssa": {
+      "value": "0.0588",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "ssa orig vel_rmse_mm_yr = 0.058762",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_rts": {
+      "value": "0.0594",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "rts orig vel_rmse_mm_yr = 0.059374",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_median": {
+      "value": "0.0590",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "median orig vel_rmse_mm_yr = 0.058984",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_wavelet": {
+      "value": "0.0616",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wavelet orig vel_rmse_mm_yr = 0.061577",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_unet_denoise": {
+      "value": "0.0605",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "unet denoise orig vel_rmse_mm_yr = 0.060548",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_bias_unet_denoise": {
+      "value": "-0.0034",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "unet denoise orig vel_bias_mm_yr = -0.003418",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_imputers_lo": {
+      "value": "0.0581",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "imputed mle orig vel_rmse = 0.058113",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_imputers_hi": {
+      "value": "0.0588",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "imputed classical max vel_rmse = 0.058759",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_unet_impute": {
+      "value": "0.0586",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "imputed unet orig vel_rmse_mm_yr = 0.058644",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_sigma_reported": {
+      "value": "0.0380",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw sigma_reported_median = 0.037974",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_empirical_scatter": {
+      "value": "0.0585",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw sigma_empirical = 0.058524",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_calibration": {
+      "value": "0.649",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw orig calibration_ratio = 0.648852",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_coverage_1sigma": {
+      "value": "0.389",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw orig coverage_1sigma = 0.388889",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_calibration_classical_lo": {
+      "value": "0.618",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wavelet orig calibration_ratio = 0.617599",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_calibration_classical_hi": {
+      "value": "0.647",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "max classical denoiser calibration_ratio (ssa 0.6466)",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_calibration_unet": {
+      "value": "0.628",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "unet denoise orig calibration_ratio = 0.628233",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_coverage_unet": {
+      "value": "0.458",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "unet denoise orig coverage_1sigma = 0.458333",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_coverage_nominal": {
+      "value": "0.683",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "nominal 1-sigma coverage of a Gaussian",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_ratio_near": {
+      "value": "0.65",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "raw calibration_ratio rounded, quoted as ~0.65",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_coverage_near": {
+      "value": "0.39",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "caption rounds 0.3889 to 0.39",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_rw_bias": {
+      "value": "-0.0089",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw raw orig vel_bias_mm_yr = -0.008882",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_rmse": {
+      "value": "0.0690",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw raw orig vel_rmse_mm_yr = 0.069030",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_calibration": {
+      "value": "0.575",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw raw orig calibration_ratio = 0.575383",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_classical_lo": {
+      "value": "0.0686",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw classical denoiser min vel_rmse (median 0.06863)",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_classical_hi": {
+      "value": "0.0713",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw classical denoiser max vel_rmse (wavelet 0.07133)",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_rmse": {
+      "value": "0.0698",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet denoise orig vel_rmse_mm_yr = 0.069825",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_calibration": {
+      "value": "0.570",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet denoise calibration_ratio = 0.569575",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_impute_rmse": {
+      "value": "0.0690",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet impute orig vel_rmse_mm_yr = 0.069017",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_impute_calibration": {
+      "value": "0.575",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet impute calibration_ratio = 0.575472",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "velocity_rmse_factor": {
+      "value": "3.6",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "derived: 0.208737 / 0.058572 = 3.56",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "t2_delta_5d": {
+      "value": "0.23",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "derived: 2.7990 - 2.5732 (SSA) = 0.23 mm",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_delta_real_5d": {
+      "value": "0.05",
+      "source": "../../experiments/exp-20261009-in-distribution/seed-aggregates.json",
+      "note": "derived: 2.5565 - 2.5106 (SSA) = 0.046 mm",
+      "sha256": {
+        "../../experiments/exp-20261009-in-distribution/seed-aggregates.json": "2f1068d21ab6173fb468e32949d32aeb92af0d773e4f57b596d356bc7d76e5c4"
+      }
+    },
+    "t2_signal_near": {
+      "value": "0.7",
+      "source": "../../experiments/exp-20261009-t2-signal/results.json",
+      "note": "trajectory signal RMSE stays near 0.68-0.78 mm across gaps",
+      "sha256": {
+        "../../experiments/exp-20261009-t2-signal/results.json": "939fe97944ad71c47377b54554c5b67523ae0731cea030127df1615ec1322938"
+      }
+    },
+    "real_classical_minus_std": {
+      "value": "0.430",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical val_selected_f1_mean - std = 0.45655 - 0.02688",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_tcn": {
+      "value": "0.273",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "tcn_val_selected_f1.mean = 0.27270 over 10 seeds",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_f1_tcn_std": {
+      "value": "0.096",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "tcn_val_selected_f1.std = 0.09626 (population, ddof=0, over 10 seeds)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_ap_tcn": {
+      "value": "0.173",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 10 TCN seeds of ap = 0.17278",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_precision_tcn": {
+      "value": "0.368",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 10 TCN seeds of precision_mean = 0.36813",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_recall_tcn": {
+      "value": "0.356",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over 10 TCN seeds of recall_mean = 0.35650",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_best_seed_f1_tcn": {
+      "value": "0.319",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "max over 10 TCN seeds = 0.31869",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_collapsed_seeds_tcn": {
+      "value": "1",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "tcn_collapsed_seeds (F1 < 0.01)",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_delay_range_lo_tcn": {
+      "value": "7.8",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "tcn_delay_abs_median_days_range[0] = 7.824",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_delay_range_hi_tcn": {
+      "value": "39.9",
+      "source": "../../experiments/exp-20261018-real-offsets/seed-aggregates.json",
+      "note": "tcn_delay_abs_median_days_range[1] = 39.926",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/seed-aggregates.json": "fffa9bd4cad169a667e44c11ab99dcbf96a5d9ac4d371ac476a48bb2834b7e0b"
+      }
+    },
+    "real_signed_delay_lo_tcn": {
+      "value": "-4.8",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "min delay_median_days_mean over 9 TCN seeds with F1>=0.01 = -4.778",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_signed_delay_hi_tcn": {
+      "value": "0.7",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "max delay_median_days_mean over 9 TCN seeds with F1>=0.01 = 0.736",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_stations_asia": {
+      "value": "39",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region Asia n_stations",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_stations_na": {
+      "value": "8",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region North America n_stations",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_stations_eu": {
+      "value": "6",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region Europe n_stations",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_asia_classical": {
+      "value": "0.488",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region Asia val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_asia_unet": {
+      "value": "0.251",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over unet_ seeds of by_region Asia val_selected_f1_mean = 0.25092",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_asia_tcn": {
+      "value": "0.294",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over tcn_ seeds of by_region Asia val_selected_f1_mean = 0.29366",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_na_classical": {
+      "value": "0.426",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region North America val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_na_unet": {
+      "value": "0.230",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over unet_ seeds of by_region North America val_selected_f1_mean = 0.23015",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_na_tcn": {
+      "value": "0.272",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over tcn_ seeds of by_region North America val_selected_f1_mean = 0.27205",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_eu_classical": {
+      "value": "0.267",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "classical by_region Europe val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_eu_unet": {
+      "value": "0.101",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over unet_ seeds of by_region Europe val_selected_f1_mean = 0.10113",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_eu_tcn": {
+      "value": "0.109",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "mean over tcn_ seeds of by_region Europe val_selected_f1_mean = 0.10871",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_synth_classical_8mm": {
+      "value": "0.815",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "synthetic_reference[\"8\"].classical.val_selected_f1 = 0.81457",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_f1_synth_unet_8mm": {
+      "value": "0.460",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "synthetic_reference[\"8\"].unet.val_selected_f1 = 0.45987",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_val_splits": {
+      "value": "40",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "protocol.val_splits",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "real_min_sep_days": {
+      "value": "60",
+      "source": "../../experiments/exp-20261018-real-offsets/results.json",
+      "note": "protocol.min_sep_days",
+      "sha256": {
+        "../../experiments/exp-20261018-real-offsets/results.json": "ab843d2d071eb93cdd3de608aba7b516fe3990d159908c8154f2b2b45cf6fc91"
+      }
+    },
+    "down_coverage_classical_lo": {
+      "value": "0.444",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "min classical denoiser coverage_1sigma = 0.444444",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_coverage_classical_hi": {
+      "value": "0.472",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "max classical denoiser coverage_1sigma (ssa) = 0.472222",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_unet_denoise_seed_lo": {
+      "value": "0.0600",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "per-seed min vel_rmse = 0.060001",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rmse_unet_denoise_seed_hi": {
+      "value": "0.0611",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "per-seed max vel_rmse = 0.061094",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_coverage": {
+      "value": "0.403",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet denoise coverage_1sigma = 0.402778",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_rw_unet_impute_coverage": {
+      "value": "0.417",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "wn_fn_rw unet impute coverage_1sigma = 0.416667",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_naive_mle": {
+      "value": "1.7",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "mle naive calibration_ratio = 1.6678e-14",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_naive_rts": {
+      "value": "1.0",
+      "source": "../../experiments/exp-20261018-rw-downstream/results_perwin.json",
+      "note": "rts naive calibration_ratio = 1.0297e-6",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results_perwin.json": "2e12a575f07082154b2d7f494186ac52b412f69120b77b2f522a40dafbe049f6"
+      }
+    },
+    "down_v1_factor": {
+      "value": "3.6",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "0.2087/0.0586 from the whole-series arm; the ratio is the v1 degradation",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_v1_calibration_unet": {
+      "value": "0.197",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "whole-series unet orig calibration_ratio = 0.1967",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "down_v1_rmse_unet": {
+      "value": "0.2087",
+      "source": "../../experiments/exp-20261018-rw-downstream/results.json",
+      "note": "whole-series unet orig vel_rmse_mm_yr = 0.20867",
+      "sha256": {
+        "../../experiments/exp-20261018-rw-downstream/results.json": "4bff5abbbca38d349fda97681982e0672ce1c8684a50a6d4011d723449bfcb30"
+      }
+    },
+    "t1_synth_in_ssa": {
+      "value": "0.252",
+      "source": "../../experiments/exp-20261018-nonparam-signals/results_perwin.json",
+      "note": "regimes.synth_in.ssa.reduction_mean = 0.25238",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/results_perwin.json": "7c8208bb7b714dac1b52a3c82ec043f702f6661a0d8dceaa16177669858ea634"
+      }
+    },
+    "t1_family_gap": {
+      "value": "0.01",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json",
+      "note": "bound on family shift; max |synth_in-synth_oof| = 0.00815",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates_perwin.json": "04049b9f68fc6420c5926fb57e2c6cbb55cbe2b27535b742a4fb443b0870def0"
+      }
+    },
+    "gru_wall": {
+      "value": "5.1~h",
+      "source": "../../experiments/arch-summary.json",
+      "note": "gru.wall_s_median = 18416.2 s = 5.12 h on one V100",
+      "sha256": {
+        "../../experiments/arch-summary.json": "ac0a44bf69f2f63fc295aed163e31c4a7a4ffc22595e7ad280c63587f96db247"
+      }
+    },
+    "t1_v1_unet_in": {
+      "value": "0.193",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates.json",
+      "note": "whole-series inference: regimes.hybrid_in.unet_in.mean = 0.19272",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates.json": "8dcf6e4276f9a792e4d5786b9072243139bde431855f97d4a63acd59d900509b"
+      }
+    },
+    "t1_v1_unet_oof": {
+      "value": "0.274",
+      "source": "../../experiments/exp-20261018-nonparam-signals/seed-aggregates.json",
+      "note": "whole-series inference: regimes.hybrid_oof.unet_oof.mean = 0.27421",
+      "sha256": {
+        "../../experiments/exp-20261018-nonparam-signals/seed-aggregates.json": "8dcf6e4276f9a792e4d5786b9072243139bde431855f97d4a63acd59d900509b"
+      }
+    },
+    "arch_den_unet": {
+      "value": "0.364",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.unet.mean = 0.36406273167053826",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_unet_std": {
+      "value": "0.001",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.unet.std = 0.0012239261881031168",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_tcn": {
+      "value": "0.365",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.tcn.mean = 0.36531343991841897",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_tcn_std": {
+      "value": "0.001",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.tcn.std = 0.0007254317937608914",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_gru": {
+      "value": "0.381",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.gru.mean = 0.3810710178236306",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_gru_std": {
+      "value": "0.004",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.gru.std = 0.004157388794822075",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_mle": {
+      "value": "0.815",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.mle.mean = 0.8148093471503408",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_wavelet": {
+      "value": "0.351",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.wavelet.mean = 0.35057449019297643",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_median": {
+      "value": "0.292",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.median.mean = 0.2923942890397536",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_den_ssa": {
+      "value": "0.232",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "denoise.per_method.ssa.mean = 0.23217700462898502",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_gru": {
+      "value": "2.892",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.gru.rmse.mean = 2.8924968887893936",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_gru_std": {
+      "value": "0.051",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.gru.rmse.std = 0.05133205841131264",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_tcn": {
+      "value": "2.979",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.tcn.rmse.mean = 2.9789421742939095",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_tcn_std": {
+      "value": "0.055",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.tcn.rmse.std = 0.05516750491605901",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_unet": {
+      "value": "3.079",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.unet.rmse.mean = 3.07903313078091",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_unet_std": {
+      "value": "0.069",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.unet.rmse.std = 0.06921809261296401",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_linear": {
+      "value": "3.130",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.linear.rmse.mean = 3.1299425652500337",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_ssa": {
+      "value": "3.111",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.ssa.rmse.mean = 3.1111710615166217",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp30_mle": {
+      "value": "3.237",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.30.per_method.mle.rmse.mean = 3.236734176507844",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_gru": {
+      "value": "2.378",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.gru.rmse.mean = 2.3781153582165713",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_gru_std": {
+      "value": "0.007",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.gru.rmse.std = 0.007428769238150485",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_tcn": {
+      "value": "2.401",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.tcn.rmse.mean = 2.4013728996646053",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_tcn_std": {
+      "value": "0.016",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.tcn.rmse.std = 0.016073642755563115",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_unet": {
+      "value": "2.537",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.unet.rmse.mean = 2.5370165142901393",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_unet_std": {
+      "value": "0.065",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.unet.rmse.std = 0.06535087660765379",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_linear": {
+      "value": "2.508",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.linear.rmse.mean = 2.508402528211401",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp5_ssa": {
+      "value": "2.540",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.5.per_method.ssa.rmse.mean = 2.5399380629357595",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_mle": {
+      "value": "3.230",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.mle.rmse.mean = 3.229502153423505",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_gru": {
+      "value": "3.577",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.gru.rmse.mean = 3.577149899613989",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_gru_std": {
+      "value": "0.039",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.gru.rmse.std = 0.0387466007940118",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_tcn": {
+      "value": "3.700",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.tcn.rmse.mean = 3.7002097844832695",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_tcn_std": {
+      "value": "0.037",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.tcn.rmse.std = 0.036694271401565934",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_unet": {
+      "value": "3.705",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.unet.rmse.mean = 3.7049887988232846",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_unet_std": {
+      "value": "0.045",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.unet.rmse.std = 0.045068289164346166",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_imp120_linear": {
+      "value": "3.650",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "impute.120.per_method.linear.rmse.mean = 3.649622320879989",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_classical": {
+      "value": "0.761",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.8.per_method.classical.val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_tcn": {
+      "value": "0.568",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.8.per_method.tcn.val_selected_f1_mean = 0.568",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_tcn_std": {
+      "value": "0.207",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.8.per_method.tcn.val_selected_f1_std = 0.207",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_tcn_median": {
+      "value": "0.637",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "median over tcn per-seed val_selected_f1_mean at 8 mm",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_unet": {
+      "value": "0.436",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.8.per_method.unet.val_selected_f1_mean = 0.436",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_unet_std": {
+      "value": "0.222",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.8.per_method.unet.val_selected_f1_std = 0.222",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det8_unet_median": {
+      "value": "0.554",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "median over unet per-seed val_selected_f1_mean at 8 mm",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det16_classical": {
+      "value": "0.947",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.16.per_method.classical.val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det16_tcn": {
+      "value": "0.829",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.16.per_method.tcn.val_selected_f1_mean = 0.829",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det16_unet": {
+      "value": "0.686",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.16.per_method.unet.val_selected_f1_mean = 0.686",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det25_classical": {
+      "value": "0.927",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.25.per_method.classical.val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det25_tcn": {
+      "value": "0.791",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.25.per_method.tcn.val_selected_f1_mean = 0.791",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det25_unet": {
+      "value": "0.675",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.25.per_method.unet.val_selected_f1_mean = 0.675",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det2_classical": {
+      "value": "0.058",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.2.per_method.classical.val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det2_learned_max": {
+      "value": "0.011",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.2: max of unet 0.0036 and tcn 0.0104",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_det4_classical": {
+      "value": "0.260",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "detect.4.per_method.classical.val_selected_f1_mean",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_gap_small": {
+      "value": "0.02",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "bound: max-learned minus min-learned denoising mean = 0.0169",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "arch_gru_gain": {
+      "value": "0.09",
+      "source": "../../experiments/exp-20261018-tcn/results.json",
+      "note": "derived: TCN 30-day RMSE 2.979 minus BiGRU 2.893 = 0.086",
+      "sha256": {
+        "../../experiments/exp-20261018-tcn/results.json": "c608f39c5617ecf214a8e6c390b8a300200ead9f2d8cbce075551eb8902db0fb"
+      }
+    },
+    "ext_n_test_series": {
+      "value": "67",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "protocol.n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_test_components": {
+      "value": "201",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "protocol.n_component_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_ngl_components": {
+      "value": "183",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_jpl_components": {
+      "value": "18",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_europe": {
+      "value": "18",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Europe denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_north_america": {
+      "value": "30",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.North America denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_asia": {
+      "value": "123",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Asia denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_pacific": {
+      "value": "24",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Pacific denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_other": {
+      "value": "6",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.other denoise n_series",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_n_realisations": {
+      "value": "3",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "protocol.n_realisations",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_denoise_seeds": {
+      "value": "10",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "n_network_seeds.denoise",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_impute_seeds": {
+      "value": "10",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "n_network_seeds.impute",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_unet": {
+      "value": "0.360",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_unet_std": {
+      "value": "0.003",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.unet.std over ten seeds rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_unet": {
+      "value": "0.345",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_unet_std": {
+      "value": "0.005",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.unet.std over ten seeds rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_wavelet": {
+      "value": "0.341",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.wavelet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_wavelet": {
+      "value": "0.317",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.wavelet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_median": {
+      "value": "0.291",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.median.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_median": {
+      "value": "0.322",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.median.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_ssa": {
+      "value": "0.230",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.ssa.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_ssa": {
+      "value": "0.254",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.ssa.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_ngl_mle": {
+      "value": "0.775",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.denoise.mle.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_jpl_mle": {
+      "value": "0.665",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.denoise.mle.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_unet_region_min": {
+      "value": "0.333",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "min over regions of unet mean (other) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_unet_region_max": {
+      "value": "0.366",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "max over regions of unet mean (North America) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_mle_region_min": {
+      "value": "0.700",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "min over regions of mle mean (other) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_mle_region_max": {
+      "value": "0.812",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "max over regions of mle mean (Europe) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_wavelet_region_min": {
+      "value": "0.299",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "min over regions of wavelet mean (other) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_wavelet_region_max": {
+      "value": "0.360",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "max over regions of wavelet mean (Europe) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_europe_unet": {
+      "value": "0.358",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Europe.denoise.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_europe_wavelet": {
+      "value": "0.360",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Europe.denoise.wavelet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_den_europe_gap": {
+      "value": "0.002",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "difference Europe wavelet - unet rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_unet": {
+      "value": "2.964",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_unet_std": {
+      "value": "0.034",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.unet.std over ten seeds rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_linear": {
+      "value": "2.967",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_linear_lo": {
+      "value": "2.914",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.linear.ci_lo rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_linear_hi": {
+      "value": "3.017",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.linear.ci_hi rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_ssa": {
+      "value": "3.000",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.ssa.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_ngl_mle": {
+      "value": "3.252",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.ngl.impute30.mle.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_unet": {
+      "value": "3.293",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_unet_std": {
+      "value": "0.042",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.unet.std over ten seeds rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_linear": {
+      "value": "3.233",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_linear_lo": {
+      "value": "3.056",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.linear.ci_lo rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_linear_hi": {
+      "value": "3.416",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.linear.ci_hi rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_ssa": {
+      "value": "3.309",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.ssa.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_mle": {
+      "value": "3.367",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_source.jpl.impute30.mle.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_jpl_gap": {
+      "value": "0.06",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "jpl impute30 unet - linear, rounded to two decimals",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_asia_unet": {
+      "value": "2.990",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Asia.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_asia_linear": {
+      "value": "2.994",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Asia.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_europe_unet": {
+      "value": "2.910",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Europe.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_europe_linear": {
+      "value": "3.028",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Europe.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_na_unet": {
+      "value": "2.954",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.North America.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_na_linear": {
+      "value": "2.942",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.North America.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_pacific_unet": {
+      "value": "3.089",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Pacific.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_pacific_linear": {
+      "value": "2.986",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.Pacific.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_other_unet": {
+      "value": "3.113",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.other.impute30.unet.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_other_linear": {
+      "value": "3.068",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "by_region.other.impute30.linear.mean rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    },
+    "ext_imp_region_max_diff": {
+      "value": "0.12",
+      "source": "../../experiments/exp-20261018-external-eval/summary.json",
+      "note": "max |unet - linear| over regions (Europe) rounded",
+      "sha256": {
+        "../../experiments/exp-20261018-external-eval/summary.json": "4f800c9827d44c05080a609a0cc35f08240e4af8764a8f8bba725e95e79b0f9b"
+      }
+    }
+  }
+}

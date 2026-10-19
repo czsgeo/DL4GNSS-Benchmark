@@ -1,0 +1,12 @@
+{
+  "exp_id": "exp-20261008-synth-harness",
+  "description": "Self-check of the ground-truth injection + estimation pipeline: (A) whittle_mle recovers injected WN/FN amplitudes; (B) gls_velocity_sigma predicts the Monte-Carlo velocity scatter. Also freezes the injection matrix for later experiments.",
+  "n": 3650,
+  "dt": "1/365.25",
+  "seed": 20261007,
+  "n_realisations": 200,
+  "grid_wn_mm": [0.0, 1.0, 2.0, 3.0],
+  "grid_fn_mm": [0.0, 2.0, 4.0, 8.0],
+  "velocity_check": {"sigma_wn_mm": 1.5, "sigma_fn_mm": 4.0, "trend_mm_yr": 2.0},
+  "tol_rel": 0.15
+}

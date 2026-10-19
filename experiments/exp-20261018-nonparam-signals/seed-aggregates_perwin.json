@@ -1,0 +1,34 @@
+{
+  "exp_id": "exp-20261018-nonparam-signals",
+  "inference": "perwin",
+  "regimes": {
+    "hybrid_in": {
+      "unet_in": {
+        "mean": 0.36619876325388045,
+        "std": 0.0019365601100229596,
+        "n_seeds": 10
+      }
+    },
+    "hybrid_oof": {
+      "unet_oof": {
+        "mean": 0.36290356282025077,
+        "std": 0.0006093860479289476,
+        "n_seeds": 10
+      }
+    },
+    "synth_in": {
+      "unet_in": {
+        "mean": 0.3893495137109304,
+        "std": 0.0010151567574063919,
+        "n_seeds": 10
+      }
+    },
+    "synth_oof": {
+      "unet_oof": {
+        "mean": 0.38120196434151904,
+        "std": 0.0007161574541313569,
+        "n_seeds": 10
+      }
+    }
+  }
+}

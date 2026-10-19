@@ -1,0 +1,93 @@
+\documentclass[smallextended]{svjour3}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage{natbib}
+\usepackage{seqsplit}
+
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\urlprefix}{URL }
+
+\journalname{Journal of Geodesy}
+
+\begin{document}
+
+\title{A reproducible benchmark of deep learning versus classical signal
+decomposition for GNSS coordinate time series: denoising, gap filling, offset
+detection, and their impact on station velocity and coloured noise}
+
+\author{Qinghua Zhang \and Zhengsheng Chen}
+
+\institute{Qinghua Zhang \at School of Geography, Nanjing Normal University,
+Nanjing 210023, China \email{sqmha@126.com} (ORCID 0000-0003-3578-3749) \and
+Zhengsheng Chen \at PLA Rocket Force University of Engineering, Xi'an 710025,
+China \email{czsgeo@126.com} (ORCID 0000-0003-0628-3470)}
+
+\authorrunning{Q. Zhang and Z. Chen}
+\titlerunning{A reproducible benchmark of learned and classical GNSS processing}
+
+\date{Received: date / Accepted: date}
+
+\maketitle
+
+\begin{abstract}
+\input{drafts/00_abstract}
+\end{abstract}
+
+\keywords{GNSS coordinate time series \and coloured noise \and power-law noise
+\and denoising \and gap filling \and offset detection \and deep learning \and
+benchmarks}
+
+\input{drafts/01_intro}
+
+\input{drafts/02_related}
+
+\input{drafts/03_data}
+
+\input{drafts/04_method}
+
+\input{drafts/05_results}
+
+\input{drafts/06_discussion}
+
+\input{drafts/07_conclusion}
+
+\section*{Declarations}
+
+\paragraph{Funding.}
+The authors received no specific funding for this work.
+
+\paragraph{Competing interests.}
+The authors declare no competing interests.
+
+\paragraph{Author contributions.}
+Q.Z. designed the benchmark, implemented the methods and experiments, and
+drafted the manuscript. Z.C. supervised the study and revised the manuscript.
+Both authors approved the final version.
+
+\paragraph{Data availability.}
+The NGL daily series are publicly available from the Nevada Geodetic Laboratory
+(\url{https://geodesy.unr.edu}) and the JPL series from the Jet Propulsion
+Laboratory (\url{https://sideshow.jpl.nasa.gov/post/series.html}); the NGL
+discontinuity catalogue is the public \texttt{steps.txt} file downloaded
+2026-10-18 and identified in Sec.~\ref{sec:data}. The frozen station list, the
+split file, the trained-network checkpoints and the result files that generate
+every number in this paper are listed in the release manifest supplied with the
+submission (file list and checksums); the archive itself will be deposited in a
+public repository on acceptance, and no repository address is asserted here.
+
+\paragraph{Code availability.}
+The analysis code, training scripts, evaluation harness and figure scripts are
+in the same release archive; their paths and checksums are given in the
+manifest.
+
+\clearpage
+\bibliographystyle{spbasic}
+\bibliography{refs}
+
+\end{document}

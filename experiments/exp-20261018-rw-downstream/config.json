@@ -1,0 +1,37 @@
+{
+  "exp_id": "exp-20261018-rw-downstream",
+  "description": "JG v2.0 revision (ZQH comment 2.2): add a random-walk component to the injected noise and carry it through the downstream velocity/uncertainty pipeline. Compares WN+FN with WN+FN+RW under the same estimators (noise re-estimated with wn+fn+rw on the raw series), reporting velocity bias, reported vs empirical sigma, calibration ratio and 1-sigma coverage for raw, denoised and gap-filled series.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "use_split": "test",
+  "max_stations": 6,
+  "components": [
+    0,
+    1
+  ],
+  "n_seeds": 3,
+  "n_boot": 1000,
+  "max_net_seeds": 2,
+  "impute_gap_days": 30,
+  "n_gaps": 5,
+  "nets_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "denoise_glob": "unet_denoise_in_s*.pt",
+  "impute_glob": "unet_impute_in_s*.pt",
+  "noise_levels": {
+    "wn_fn": {
+      "sigma_wn_mm": 1.5,
+      "sigma_fn_mm": 3.0,
+      "sigma_rw_mm": 0.0
+    },
+    "wn_fn_rw": {
+      "sigma_wn_mm": 1.5,
+      "sigma_fn_mm": 3.0,
+      "sigma_rw_mm": 1.0
+    }
+  },
+  "seed": 20261007,
+  "inference_arms": {
+    "global": "whole-series standardisation (v1 protocol); results.json",
+    "perwin": "per-window standardisation matching training; results_perwin.json"
+  }
+}

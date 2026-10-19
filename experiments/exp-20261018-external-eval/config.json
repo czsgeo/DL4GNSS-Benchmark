@@ -1,0 +1,27 @@
+{
+  "exp_id": "exp-20261018-external-eval",
+  "description": "JG v2.0 external-validation arm: score denoising and 30-day gap filling on every held-out test series, split by analysis centre (NGL vs JPL) and by five geographic regions, so a single-region or single-centre artefact would be visible.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "stations_csv": "experiments/exp-20261008-data-prep/data/stations.csv",
+  "ngl_holdings": "experiments/exp-20261008-data-prep/data/ngl_holdings.txt",
+  "use_split": "test",
+  "components": [
+    0,
+    1,
+    2
+  ],
+  "n_seeds": 3,
+  "impute_gap_days": 30,
+  "n_gaps": 2,
+  "nets_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "denoise_glob": "unet_denoise_in_s*.pt",
+  "impute_glob": "unet_impute_in_s*.pt",
+  "noise": {
+    "sigma_wn_mm": 1.5,
+    "sigma_fn_mm": 3.0,
+    "sigma_rw_mm": 0.0
+  },
+  "seed": 20261007,
+  "inference": "per_window (each window standardised by its own statistics, matching training)"
+}

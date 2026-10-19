@@ -1,0 +1,84 @@
+\section{Related work}
+\label{sec:related}
+
+Four literatures meet in this benchmark: coloured-noise modelling, model-free
+decomposition, machine learning on coordinate series, and shared evaluation
+protocols. Table~\ref{tab:related} summarises what each provides and what it
+leaves out; the text keeps only the points that shape the protocol.
+
+\paragraph{Coloured noise and the trajectory model.}
+Power-law noise in daily coordinates and its control on velocity precision are
+the founding results of the field \citep{mao1999noise,williams2003coloured}.
+The maximum-likelihood trajectory fit, with efficient covariance construction and
+support for missing epochs, is implemented in CATS \citep{williams2008cats} and
+Hector \citep{bos2008fast,bos2013fast}, and the noise model has been extended to
+multivariate and seasonal formulations
+\citep{amirisimkooei2007noise,amirisimkooei2009multivariate,klos2018seasonal},
+including stochastic seasonality in velocity estimation
+\citep{xu2025velocity}.
+This literature supplies our reference estimator and the generalised-least-squares
+velocity covariance. It treats the trajectory model as the frame within which
+everything is measured; we instead score it as one candidate among several,
+including on gap filling and detection, which its formulation was not designed
+for.
+
+\paragraph{Model-free decomposition.}
+Singular spectrum analysis \citep{wdowinski1997spatial,ji2024ssa}, wavelet
+shrinkage \citep{ji2020wavelet}, multivariate SSA
+\citep{gruszczynska2017mssa} and spatiotemporal PCA/Karhunen--Lo\`eve filtering
+\citep{dong2006spatiotemporal} separate seasonal signal from residual without a
+parametric trajectory. They are
+the natural classical competitors for a learned model, and we carry SSA, wavelet
+shrinkage and a moving median as three independent members of this family. Their
+usual validation is the task they were built for, on the series they were built
+on; here they are scored on the same injected realisations as every other method.
+
+\paragraph{Learned processing.}
+Networks have been applied to discontinuity detection
+\citep{crocetti2021discontinuity,wang2025changepointcnn}, denoising
+\citep{li2018denoising,mastella2025denoising,gao2022gbdt,he2026tspredictor},
+gap filling as low-rank completion \citep{liu2022imputation}, network-wide
+denoising with graph models \citep{bachelot2025gnn}, and uncertainty propagation
+\citep{kiani2022uncertainty}, and decomposition-plus-learning pipelines have been
+evaluated for height-series prediction \citep{guo2026decomposition}. Time-domain
+machine learning for GNSS series has also been reviewed as a whole
+\citep{gabsatarov2025review}; related variants continue to appear
+\citep{simsek2025dl,ozarpaci2024machine}. The evidence is usually recovery error
+on the task the network was trained for. Where a geodetic product is reached, the
+velocity is often estimated directly from positions rather than through the
+coloured-noise model, so the effect of processing on the published uncertainty is
+not traced. That is the step this benchmark adds.
+
+\paragraph{Shared protocols.}
+DOGEx fixed a detection dataset, injected known offsets and had independent
+groups run detectors blind \citep{gazeaux2013detecting}; it remains the model for
+a community protocol, but it covers one task and synthetic truth. CATS and Hector
+are tools, not protocols. We are not aware of a protocol that fixes the data and
+the split, creates exact truth by injection, scores classical and learned methods
+on the same realisations across three tasks, validates detection against real
+catalogue labels, and carries each output through to velocity, noise amplitudes
+and interval coverage.
+
+\begin{table*}[t]
+\centering
+\caption{Positioning of representative work. ``Downstream'' means the study
+reports the effect of processing on a geodetic product (velocity or its
+uncertainty); ``common truth'' means classical and learned methods are scored on
+the same known realisation.}
+\label{tab:related}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}p{2.4cm}p{2.0cm}Xp{1.7cm}p{2.8cm}@{}}
+\toprule
+Study or family & Task & Evidence base & Downstream & What this benchmark adds \\
+\midrule
+MLE trajectory; CATS, Hector & noise, velocity & parametric fit to real series & yes & scores the same estimator against nonparametric truth and other methods \\
+SSA, wavelet, mSSA & decomposition & recovery on selected series & no & common realisations, three tasks, seed-aware learned comparison \\
+Detection networks & offset detection & synthetic or station-specific labels & no & real catalogue labels, amplitude and SNR strata, delay \\
+Denoising, imputation, GNN networks & T1, T2 & recovery error & no & downstream noise and uncertainty, gap lengths to one year \\
+Learned uncertainty and velocity & product & direct velocity from positions & partial & processing-to-noise-to-uncertainty chain \\
+DOGEx & detection & blind synthetic injection & no & three tasks, real labels, two analysis centres \\
+This paper & T1--T3 & injection, two truth families, real labels & yes & station-level split, 10--20 seeds, two architectures, RW arm \\
+\bottomrule
+\end{tabularx}
+\end{table*}

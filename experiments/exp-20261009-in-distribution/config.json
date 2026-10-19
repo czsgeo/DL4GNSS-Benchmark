@@ -1,0 +1,32 @@
+{
+  "exp_id": "exp-20261009-in-distribution",
+  "description": "Review M2: separate 'synthetic-to-real domain shift' from 'implementation/training defect' in the learned denoiser and gap filler. Scores the trained nets on fully synthetic in-distribution windows (the exact training generator), then ablates the inference path (whole-series vs per-window standardisation) on long synthetic and real test series.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "use_split": "test",
+  "max_stations": 10,
+  "components": [0, 1, 2],
+  "window": {
+    "n_windows": 150,
+    "w": 1024,
+    "impute_lengths_days": [5, 30, 120],
+    "n_gaps": 5,
+    "seed": 20261007
+  },
+  "longseries": {
+    "n_series": 40,
+    "n_days": 3000,
+    "n_windows_per_series": 3,
+    "impute_lengths_days": [5, 30, 120],
+    "n_gaps": 5,
+    "seed": 20261008
+  },
+  "real": {
+    "impute_lengths_days": [5, 30],
+    "n_gaps": 5,
+    "seed": 20261009
+  },
+  "nets_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "noise": {"sigma_wn_mm": 1.5, "sigma_fn_mm": 3.0, "sigma_rw_mm": 0.0},
+  "seed": 20261007
+}

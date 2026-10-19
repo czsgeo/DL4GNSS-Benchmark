@@ -1,0 +1,21 @@
+{
+  "exp_id": "exp-20261009-t2-signal",
+  "description": "Review point m9: re-run the T2 gap-filling protocol verbatim (identical stations, components, seeds, gap lengths and gap layout to exp-20261008-classical-baselines / exp-20261008-dl-baselines) but score every filler against BOTH the withheld observation y (what the station recorded, correlated noise included) and the noise-free signal S. A filler that reproduces part of the correlated noise looks artificially good against y; one that recovers the underlying signal looks good against S. Reproduces the registered t2_* numbers as a by-product.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "use_split": "test",
+  "max_stations": 20,
+  "components": [0, 1, 2],
+  "noise": {
+    "sigma_wn_mm": 1.5,
+    "sigma_fn_mm": 3.0,
+    "sigma_rw_mm": 0.0
+  },
+  "impute": {
+    "gap_lengths_days": [5, 10, 30, 60, 120, 365],
+    "n_gaps": 5
+  },
+  "nets_dir": "experiments/exp-20261008-dl-baselines/nets",
+  "impute_glob": "impute_s*.pt",
+  "seed": 20261007
+}

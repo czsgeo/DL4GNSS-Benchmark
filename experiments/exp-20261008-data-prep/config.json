@@ -1,0 +1,29 @@
+{
+  "exp_id": "exp-20261008-data-prep",
+  "description": "Build the frozen benchmark dataset: IGS single-AC JPL daily ENU series + a frozen NGL tenv3 long-record subset; station-level train/val/test split.",
+  "jpl_source_npz": "D:/Server/AiFoundation/CcForPaper-v1.8.0-win-JPL 逐日解噪声/paper-workspace/experiments/exp-20261005-jpl-sinex/data/clean_jpl.npz",
+  "jpl_source_offsets": "D:/Server/AiFoundation/CcForPaper-v1.8.0-win-JPL 逐日解噪声/paper-workspace/experiments/exp-20261005-jpl-sinex/data/clean_jpl_offsets.json",
+  "jpl_source_series": "D:/Server/AiFoundation/CcForPaper-v1.8.0-win-JPL 逐日解噪声/paper-workspace/experiments/exp-20261005-jpl-sinex/data/series_jpl.csv",
+  "ngl": {
+    "frame": "IGS14",
+    "target_n": 300,
+    "max_candidates": 420,
+    "workers": 24,
+    "min_solutions": 4000,
+    "t_begin_max_year": 2009.0,
+    "t_end_min_year": 2024.0,
+    "min_span_years": 15.0
+  },
+  "qc": {
+    "min_epochs": 600,
+    "min_completeness": 0.5,
+    "min_span_years": 5.0,
+    "max_gap_days": 120
+  },
+  "split": {
+    "seed": 20261007,
+    "fractions": [0.6, 0.2, 0.2],
+    "by": "station"
+  },
+  "seed": 20261007
+}

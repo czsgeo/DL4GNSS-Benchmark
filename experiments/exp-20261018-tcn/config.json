@@ -1,0 +1,32 @@
+{
+  "exp_id": "exp-20261018-tcn",
+  "description": "JG v2.0 revision (ZQH comment 1.3): a third learned architecture (dilated TCN) trained on the identical generator as the U-Net and BiGRU, with >=10 seeds for denoise/impute and 20 for detect. Used to test whether the architecture ranking is an artefact of one convolutional design.",
+  "nets_dir": "nets",
+  "skip_existing": true,
+  "training": {
+    "n_steps": 3000,
+    "batch": 32,
+    "lr": 0.002,
+    "w": 1024
+  },
+  "plans": {
+    "denoise_in": {
+      "arch": "tcn", "task": "denoise", "family": "in",
+      "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                20261012, 20261013, 20261014, 20261015, 20261016]
+    },
+    "impute_in": {
+      "arch": "tcn", "task": "impute", "family": "in",
+      "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                20261012, 20261013, 20261014, 20261015, 20261016]
+    },
+    "detect_in": {
+      "arch": "tcn", "task": "detect", "family": "in",
+      "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                20261012, 20261013, 20261014, 20261015, 20261016,
+                20261017, 20261018, 20261019, 20261020, 20261021,
+                20261022, 20261023, 20261024, 20261025, 20261026]
+    }
+  },
+  "seed": 20261007
+}

@@ -1,0 +1,25 @@
+{
+  "exp_id": "exp-20261018-real-offsets",
+  "unet_val_selected_f1": {
+    "mean": 0.23234519237781256,
+    "std": 0.10738218014819646,
+    "n_seeds": 20
+  },
+  "unet_collapsed_seeds": 3,
+  "unet_delay_abs_median_days_range": [
+    16.505651806232464,
+    52.106932943086484
+  ],
+  "unet_delay_abs_median_days_n_finite": 17,
+  "tcn_val_selected_f1": {
+    "mean": 0.27269767605515444,
+    "std": 0.09626482467941033,
+    "n_seeds": 10
+  },
+  "tcn_collapsed_seeds": 1,
+  "tcn_delay_abs_median_days_range": [
+    7.824034358022689,
+    39.925767418376424
+  ],
+  "tcn_delay_abs_median_days_n_finite": 9
+}

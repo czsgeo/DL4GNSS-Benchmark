@@ -1,0 +1,2147 @@
+{
+  "exp_id": "exp-20261018-real-offsets",
+  "catalog": {
+    "url": "https://geodesy.unr.edu/NGLStationPages/steps.txt",
+    "download_date": "2026-10-18",
+    "sha256": "49894f7566ed34da3eb646087fc2fc64c5766720ba2368a3f6f6df53f3f282d8",
+    "lines_used": 142625,
+    "codes": [
+      1,
+      2
+    ],
+    "label_rule": "observed |step| >= 3.0 sigma; dedup 60 d; edge margin 0.5 y"
+  },
+  "protocol": {
+    "tol_days": 180,
+    "min_sep_days": 60,
+    "val_splits": 40,
+    "station_level": true
+  },
+  "labels": {
+    "n_stations_with_labels": 58,
+    "n_component_series": 153,
+    "n_labels": 1743,
+    "n_by_code": {
+      "1": 52,
+      "2": 1691
+    },
+    "n_by_component": {
+      "0": 1006,
+      "1": 528,
+      "2": 209
+    },
+    "n_by_snr": {
+      "3-5": 459,
+      "5-10": 520,
+      ">10": 764
+    },
+    "amp_mm_median": -6.233663053309726,
+    "amp_mm_iqr": [
+      -17.790725693934125,
+      11.611941927430564
+    ],
+    "amp_mm_min": -1472.2171883871883,
+    "amp_mm_max": 6633.937858788321
+  },
+  "detection": {
+    "per_method": {
+      "classical": {
+        "val_selected_f1_mean": 0.4565530186472852,
+        "val_selected_f1_std": 0.026879239465724472,
+        "precision_mean": 0.49019946467985226,
+        "recall_mean": 0.5361332050923913,
+        "delay_median_days_mean": -51.455347749688926,
+        "delay_abs_median_days_mean": 69.71533998813943,
+        "recall_by_snr": {
+          "3-5": 0.3982991189509919,
+          "5-10": 0.6095939785576061,
+          ">10": 0.8482201820058087
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.32244903146927834,
+        "f1_oracle": 0.46799918001985397,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.26666732804232807,
+            "val_selected_f1_std": 0.14324410535599985,
+            "n_splits": 40,
+            "ap": 0.16669640057797952
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.42614504114166163,
+            "val_selected_f1_std": 0.13580758662418874,
+            "n_splits": 40,
+            "ap": 0.2681743126080466
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.48818603910517033,
+            "val_selected_f1_std": 0.021753745307418103,
+            "n_splits": 40,
+            "ap": 0.3755729175113233
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.4940770486725795,
+            "val_selected_f1_std": 0.03959954333035224,
+            "n_splits": 37,
+            "ap": 0.2852760955263343
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.4874915824915825,
+            "val_selected_f1_std": 0.03017150187210632,
+            "n_splits": 15,
+            "ap": 0.32828160199742845
+          }
+        }
+      },
+      "unet_s20261007": {
+        "val_selected_f1_mean": 0.22302703330940615,
+        "val_selected_f1_std": 0.02309659296259412,
+        "precision_mean": 0.34391342015264426,
+        "recall_mean": 0.2530606776925829,
+        "delay_median_days_mean": -0.4717467318509179,
+        "delay_abs_median_days_mean": 24.70686003606472,
+        "recall_by_snr": {
+          "3-5": 0.0986223284655456,
+          "5-10": 0.13600034740187023,
+          ">10": 0.2466374690619932
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.10327378309708835,
+        "f1_oracle": 0.23438298817789555,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.07359374999999999,
+            "val_selected_f1_std": 0.05276031713252396,
+            "n_splits": 40,
+            "ap": 0.01455026455026455
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2918996598639455,
+            "val_selected_f1_std": 0.12550549202265116,
+            "n_splits": 40,
+            "ap": 0.1593602912808642
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.2408465613408012,
+            "val_selected_f1_std": 0.017779803529395892,
+            "n_splits": 40,
+            "ap": 0.11763193995515539
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.11730212355212354,
+            "val_selected_f1_std": 0.06830841013615797,
+            "n_splits": 37,
+            "ap": 0.037671715073335436
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.15202279202279204,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.04796443268665491
+          }
+        }
+      },
+      "unet_s20261008": {
+        "val_selected_f1_mean": 0.0003553549483120076,
+        "val_selected_f1_std": 0.00026450300057279433,
+        "precision_mean": 0.008908045977011494,
+        "recall_mean": 0.000181302556577685,
+        "delay_median_days_mean": -13.777766774529505,
+        "delay_abs_median_days_mean": 16.627485157561036,
+        "recall_by_snr": {
+          "3-5": 0.0,
+          "5-10": 0.0,
+          ">10": 0.0021346268843291647
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 2.6758729670663286e-06,
+        "f1_oracle": 0.00045633629726017503,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.000535679001664003,
+            "val_selected_f1_std": 0.0004034852639073893,
+            "n_splits": 40,
+            "ap": 5.918235806187462e-06
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 37,
+            "ap": 0.0
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.0
+          }
+        }
+      },
+      "unet_s20261009": {
+        "val_selected_f1_mean": 0.2357449298354261,
+        "val_selected_f1_std": 0.0211451091623155,
+        "precision_mean": 0.3747903302207975,
+        "recall_mean": 0.26329262517163576,
+        "delay_median_days_mean": 0.9922146872176327,
+        "delay_abs_median_days_mean": 23.20830998337425,
+        "recall_by_snr": {
+          "3-5": 0.0972093499073936,
+          "5-10": 0.130323564074374,
+          ">10": 0.24447686645235317
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.10828327575506093,
+        "f1_oracle": 0.2444160187584258,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.0919067390942391,
+            "val_selected_f1_std": 0.03675886378715081,
+            "n_splits": 40,
+            "ap": 0.023270903479236806
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.30590378724589246,
+            "val_selected_f1_std": 0.10688335739975595,
+            "n_splits": 40,
+            "ap": 0.14095052083333331
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.2548840110738719,
+            "val_selected_f1_std": 0.017557361026898862,
+            "n_splits": 40,
+            "ap": 0.12342874328181802
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.11659329137777416,
+            "val_selected_f1_std": 0.06374133830694638,
+            "n_splits": 37,
+            "ap": 0.05052281180753403
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.1806306543697848,
+            "val_selected_f1_std": 0.004327127638450459,
+            "n_splits": 15,
+            "ap": 0.06620718462823726
+          }
+        }
+      },
+      "unet_s20261010": {
+        "val_selected_f1_mean": 0.19265512521656963,
+        "val_selected_f1_std": 0.017319092124935882,
+        "precision_mean": 0.3750912409119079,
+        "recall_mean": 0.22605091670403002,
+        "delay_median_days_mean": -0.4702885274668539,
+        "delay_abs_median_days_mean": 33.48687464902948,
+        "recall_by_snr": {
+          "3-5": 0.08221195939162215,
+          "5-10": 0.09935499873175666,
+          ">10": 0.19876954278443865
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.08539131069246925,
+        "f1_oracle": 0.19529130822853522,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.15489853664853664,
+            "val_selected_f1_std": 0.03982355959130084,
+            "n_splits": 40,
+            "ap": 0.06354717813051144
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.07975446428571428,
+            "val_selected_f1_std": 0.05681243458807217,
+            "n_splits": 40,
+            "ap": 0.007999441964285713
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.20436529638507145,
+            "val_selected_f1_std": 0.018140227221760404,
+            "n_splits": 40,
+            "ap": 0.08803353415592094
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3914175447750765,
+            "val_selected_f1_std": 0.10060770293935364,
+            "n_splits": 37,
+            "ap": 0.23134617408054903
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17722149026496847,
+            "val_selected_f1_std": 0.0003401829904442203,
+            "n_splits": 15,
+            "ap": 0.06633428300094965
+          }
+        }
+      },
+      "unet_s20261011": {
+        "val_selected_f1_mean": 0.2974170049922026,
+        "val_selected_f1_std": 0.016655792951448003,
+        "precision_mean": 0.38949322166170547,
+        "recall_mean": 0.3902658881635216,
+        "delay_median_days_mean": -0.8249223471505907,
+        "delay_abs_median_days_mean": 29.616315183725455,
+        "recall_by_snr": {
+          "3-5": 0.13031863680927375,
+          "5-10": 0.18681971863863983,
+          ">10": 0.3471967007569792
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.16888958693013392,
+        "f1_oracle": 0.3018076593945165,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.10839621836496835,
+            "val_selected_f1_std": 0.023661341648709967,
+            "n_splits": 40,
+            "ap": 0.030980079591190694
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2913838339024674,
+            "val_selected_f1_std": 0.07274784210191933,
+            "n_splits": 40,
+            "ap": 0.11688501602564104
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.32730371176673045,
+            "val_selected_f1_std": 0.01596294053255862,
+            "n_splits": 40,
+            "ap": 0.1949563216064466
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3354185446665122,
+            "val_selected_f1_std": 0.05139500722511716,
+            "n_splits": 37,
+            "ap": 0.1854648556167937
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17740740740740743,
+            "val_selected_f1_std": 0.0019548098626360954,
+            "n_splits": 15,
+            "ap": 0.06572971781305113
+          }
+        }
+      },
+      "unet_s20261012": {
+        "val_selected_f1_mean": 0.30706189573162573,
+        "val_selected_f1_std": 0.01802438184178581,
+        "precision_mean": 0.42870498405651736,
+        "recall_mean": 0.3949458914448946,
+        "delay_median_days_mean": 0.2802779053479384,
+        "delay_abs_median_days_mean": 22.552852399024935,
+        "recall_by_snr": {
+          "3-5": 0.12253584476379498,
+          "5-10": 0.16201717662412332,
+          ">10": 0.337958534139954
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.18994567524161643,
+        "f1_oracle": 0.3125643898529831,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.1472899531024531,
+            "val_selected_f1_std": 0.026578146461547058,
+            "n_splits": 40,
+            "ap": 0.08813476768520627
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3057720790070414,
+            "val_selected_f1_std": 0.07947500547660706,
+            "n_splits": 40,
+            "ap": 0.1337359974371693
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3234429028464557,
+            "val_selected_f1_std": 0.017614474753566832,
+            "n_splits": 40,
+            "ap": 0.18833057827391658
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.42875126257030854,
+            "val_selected_f1_std": 0.04929517811060881,
+            "n_splits": 37,
+            "ap": 0.27215850357632765
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.1862433862433863,
+            "val_selected_f1_std": 0.001396292759025792,
+            "n_splits": 15,
+            "ap": 0.07032241096568581
+          }
+        }
+      },
+      "unet_s20261013": {
+        "val_selected_f1_mean": 0.28961513238328435,
+        "val_selected_f1_std": 0.01725012312888105,
+        "precision_mean": 0.4051606702005374,
+        "recall_mean": 0.3654939409742609,
+        "delay_median_days_mean": -0.843577397287197,
+        "delay_abs_median_days_mean": 23.481656368391057,
+        "recall_by_snr": {
+          "3-5": 0.11238371805080068,
+          "5-10": 0.15711297169631525,
+          ">10": 0.32429370905958904
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.17973885082238056,
+        "f1_oracle": 0.2992564169991178,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.10884232954545454,
+            "val_selected_f1_std": 0.038393066066438906,
+            "n_splits": 40,
+            "ap": 0.048500216800870403
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2898420815295816,
+            "val_selected_f1_std": 0.07766445971923666,
+            "n_splits": 40,
+            "ap": 0.12023582175925925
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.30913481939215487,
+            "val_selected_f1_std": 0.021275120503507695,
+            "n_splits": 40,
+            "ap": 0.18735947346628068
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.4100165562233302,
+            "val_selected_f1_std": 0.05748631558752536,
+            "n_splits": 37,
+            "ap": 0.28796907974570013
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.19618542967562583,
+            "val_selected_f1_std": 0.02287354912230213,
+            "n_splits": 15,
+            "ap": 0.07484567901234566
+          }
+        }
+      },
+      "unet_s20261014": {
+        "val_selected_f1_mean": 0.30863854248907796,
+        "val_selected_f1_std": 0.014571005637872541,
+        "precision_mean": 0.3935443791182833,
+        "recall_mean": 0.4313310353976153,
+        "delay_median_days_mean": -3.7734971281316483,
+        "delay_abs_median_days_mean": 33.859168267955035,
+        "recall_by_snr": {
+          "3-5": 0.1365602860235306,
+          "5-10": 0.19153045709862976,
+          ">10": 0.3646878572655359
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1900726220882878,
+        "f1_oracle": 0.3143850825555207,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.12516939484126985,
+            "val_selected_f1_std": 0.018297097007532133,
+            "n_splits": 40,
+            "ap": 0.06097623441373441
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.34485113651301547,
+            "val_selected_f1_std": 0.08312919529658332,
+            "n_splits": 40,
+            "ap": 0.16462871458531184
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3306157136891418,
+            "val_selected_f1_std": 0.014340583424138551,
+            "n_splits": 40,
+            "ap": 0.19015687589598235
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.33463739713739715,
+            "val_selected_f1_std": 0.043897517357378,
+            "n_splits": 37,
+            "ap": 0.21538935910440987
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.15921581405452373,
+            "val_selected_f1_std": 0.007996949438056794,
+            "n_splits": 15,
+            "ap": 0.06322072988739655
+          }
+        }
+      },
+      "unet_s20261015": {
+        "val_selected_f1_mean": 0.30326984429129605,
+        "val_selected_f1_std": 0.014981866842447789,
+        "precision_mean": 0.43303778831517725,
+        "recall_mean": 0.3829436471023752,
+        "delay_median_days_mean": 0.21007350059552649,
+        "delay_abs_median_days_mean": 16.505651806232464,
+        "recall_by_snr": {
+          "3-5": 0.11444354427793595,
+          "5-10": 0.16550611930189485,
+          ">10": 0.3229797946836366
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1927204938274797,
+        "f1_oracle": 0.31097969686957344,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.12641400405830555,
+            "val_selected_f1_std": 0.04129524447776768,
+            "n_splits": 40,
+            "ap": 0.0575450360663223
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3118870982470606,
+            "val_selected_f1_std": 0.0746312194907845,
+            "n_splits": 40,
+            "ap": 0.1412502066798942
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3224751981532269,
+            "val_selected_f1_std": 0.016660861040457605,
+            "n_splits": 40,
+            "ap": 0.2049163603467231
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.4112684748824078,
+            "val_selected_f1_std": 0.06710771140956018,
+            "n_splits": 37,
+            "ap": 0.2159153175356879
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.18983153925682666,
+            "val_selected_f1_std": 0.0036144447146242023,
+            "n_splits": 15,
+            "ap": 0.06697391627216187
+          }
+        }
+      },
+      "unet_s20261016": {
+        "val_selected_f1_mean": 0.000203544061302682,
+        "val_selected_f1_std": 0.0002397704096039862,
+        "precision_mean": 0.004885057471264368,
+        "recall_mean": 0.00010393739300562485,
+        "delay_median_days_mean": 76.64920942623303,
+        "delay_abs_median_days_mean": 76.64920942623303,
+        "recall_by_snr": {
+          "3-5": 0.0,
+          "5-10": 0.0,
+          ">10": 0.0011867451371875197
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 7.027545166032782e-07,
+        "f1_oracle": 0.00023946360153256706,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.00031365964190803225,
+            "val_selected_f1_std": 0.0003771881781770457,
+            "n_splits": 40,
+            "ap": 1.5542841511199393e-06
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 37,
+            "ap": 0.0
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.0
+          }
+        }
+      },
+      "unet_s20261017": {
+        "val_selected_f1_mean": 0.2543456170317522,
+        "val_selected_f1_std": 0.018914409168012913,
+        "precision_mean": 0.3107523270138949,
+        "recall_mean": 0.4053606193928088,
+        "delay_median_days_mean": -18.253108257490055,
+        "delay_abs_median_days_mean": 52.106932943086484,
+        "recall_by_snr": {
+          "3-5": 0.13965829592917917,
+          "5-10": 0.17054482572628515,
+          ">10": 0.355652824142083
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.16625989666095078,
+        "f1_oracle": 0.26855331978074803,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.09143878995886331,
+            "val_selected_f1_std": 0.03243503953886204,
+            "n_splits": 40,
+            "ap": 0.047373527132514054
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.22272963194404705,
+            "val_selected_f1_std": 0.07492784016516128,
+            "n_splits": 40,
+            "ap": 0.12327891312386241
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.2836914209617654,
+            "val_selected_f1_std": 0.016918687596156286,
+            "n_splits": 40,
+            "ap": 0.18287227813335283
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3196818241073085,
+            "val_selected_f1_std": 0.06186774456076023,
+            "n_splits": 37,
+            "ap": 0.2163403845435379
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.1130420800389841,
+            "val_selected_f1_std": 0.006200456971673613,
+            "n_splits": 15,
+            "ap": 0.033632199318473825
+          }
+        }
+      },
+      "unet_s20261018": {
+        "val_selected_f1_mean": 0.28952094625748404,
+        "val_selected_f1_std": 0.021074166632097265,
+        "precision_mean": 0.3558179027170677,
+        "recall_mean": 0.42244243719700547,
+        "delay_median_days_mean": -13.34469237992098,
+        "delay_abs_median_days_mean": 46.87375157210302,
+        "recall_by_snr": {
+          "3-5": 0.14897321250820694,
+          "5-10": 0.2026203263065101,
+          ">10": 0.3730780107436903
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.17694212512693344,
+        "f1_oracle": 0.30052080383541074,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11979032946220447,
+            "val_selected_f1_std": 0.03742451950125733,
+            "n_splits": 40,
+            "ap": 0.06345755903047569
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2812455539390063,
+            "val_selected_f1_std": 0.09599353784602715,
+            "n_splits": 40,
+            "ap": 0.15877353147752454
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3205509894082903,
+            "val_selected_f1_std": 0.0198499156800539,
+            "n_splits": 40,
+            "ap": 0.1914166451285968
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.30858256065023754,
+            "val_selected_f1_std": 0.04501165088108332,
+            "n_splits": 37,
+            "ap": 0.19090825609447445
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.14471456654393838,
+            "val_selected_f1_std": 0.008731548234454501,
+            "n_splits": 15,
+            "ap": 0.05437926271259605
+          }
+        }
+      },
+      "unet_s20261019": {
+        "val_selected_f1_mean": 0.2927358029377497,
+        "val_selected_f1_std": 0.013982587110379613,
+        "precision_mean": 0.39665716261050943,
+        "recall_mean": 0.38564200010542093,
+        "delay_median_days_mean": -0.6727812928830879,
+        "delay_abs_median_days_mean": 30.227932412624874,
+        "recall_by_snr": {
+          "3-5": 0.11424416303140757,
+          "5-10": 0.16942372743861894,
+          ">10": 0.349987136965205
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.18291630427733743,
+        "f1_oracle": 0.3019820759964813,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.09926182613682615,
+            "val_selected_f1_std": 0.027525063915898245,
+            "n_splits": 40,
+            "ap": 0.05043420631655926
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2782321195597593,
+            "val_selected_f1_std": 0.07409183885357923,
+            "n_splits": 40,
+            "ap": 0.12077596520955898
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.32113230398020093,
+            "val_selected_f1_std": 0.017313838663651597,
+            "n_splits": 40,
+            "ap": 0.2012305248338913
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3748452442127856,
+            "val_selected_f1_std": 0.04179679925218535,
+            "n_splits": 37,
+            "ap": 0.2721020685989821
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17744351228222194,
+            "val_selected_f1_std": 0.012240886310543871,
+            "n_splits": 15,
+            "ap": 0.06921418773270624
+          }
+        }
+      },
+      "unet_s20261020": {
+        "val_selected_f1_mean": 0.2983315999829417,
+        "val_selected_f1_std": 0.017388865867820538,
+        "precision_mean": 0.40439278343646007,
+        "recall_mean": 0.3940273940855414,
+        "delay_median_days_mean": -3.116576486361505,
+        "delay_abs_median_days_mean": 32.63782157766032,
+        "recall_by_snr": {
+          "3-5": 0.11660166240762444,
+          "5-10": 0.16788822243562831,
+          ">10": 0.35533030866909054
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1862560272581669,
+        "f1_oracle": 0.3071670447003955,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.1511659891034891,
+            "val_selected_f1_std": 0.08081576241332693,
+            "n_splits": 40,
+            "ap": 0.06233327821869489
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.29610706013850424,
+            "val_selected_f1_std": 0.07884127667902512,
+            "n_splits": 40,
+            "ap": 0.1678704763600597
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3186963811239039,
+            "val_selected_f1_std": 0.020513749389981035,
+            "n_splits": 40,
+            "ap": 0.19353927112321093
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.37892768654963777,
+            "val_selected_f1_std": 0.08371220952484744,
+            "n_splits": 37,
+            "ap": 0.19371866030362764
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.16843127823519982,
+            "val_selected_f1_std": 0.009407716636796666,
+            "n_splits": 15,
+            "ap": 0.06746328014443956
+          }
+        }
+      },
+      "unet_s20261021": {
+        "val_selected_f1_mean": 0.0,
+        "val_selected_f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "delay_median_days_mean": NaN,
+        "delay_abs_median_days_mean": NaN,
+        "recall_by_snr": {
+          "3-5": 0.0,
+          "5-10": 0.0,
+          ">10": 0.0
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.0,
+        "f1_oracle": 0.0,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 37,
+            "ap": 0.0
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.0
+          }
+        }
+      },
+      "unet_s20261022": {
+        "val_selected_f1_mean": 0.18935597459389208,
+        "val_selected_f1_std": 0.01707976584218044,
+        "precision_mean": 0.3652249384602325,
+        "recall_mean": 0.22024928518451636,
+        "delay_median_days_mean": -11.452972534099247,
+        "delay_abs_median_days_mean": 50.80981454700897,
+        "recall_by_snr": {
+          "3-5": 0.08147013183637344,
+          "5-10": 0.11143501746162876,
+          ">10": 0.21457615932322013
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.07928647907426771,
+        "f1_oracle": 0.19183633032943687,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.1338546626984127,
+            "val_selected_f1_std": 0.04139086823406669,
+            "n_splits": 40,
+            "ap": 0.05658394460477793
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.07528784759517843,
+            "val_selected_f1_std": 0.05018628160665073,
+            "n_splits": 40,
+            "ap": 0.006927083333333333
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.20531794700452322,
+            "val_selected_f1_std": 0.020241096942639737,
+            "n_splits": 40,
+            "ap": 0.08275341242385809
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3738797176297176,
+            "val_selected_f1_std": 0.10623625112233168,
+            "n_splits": 37,
+            "ap": 0.19880340923936599
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17568542568542567,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.0734567901234568
+          }
+        }
+      },
+      "unet_s20261023": {
+        "val_selected_f1_mean": 0.31043465496435174,
+        "val_selected_f1_std": 0.017356096665711553,
+        "precision_mean": 0.4159664843149994,
+        "recall_mean": 0.41592537975443855,
+        "delay_median_days_mean": -1.5765949674409092,
+        "delay_abs_median_days_mean": 26.344847775939876,
+        "recall_by_snr": {
+          "3-5": 0.1289228725140475,
+          "5-10": 0.17750861302142557,
+          ">10": 0.3417103673016738
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1938083930569962,
+        "f1_oracle": 0.31713986434465646,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.14222747279273013,
+            "val_selected_f1_std": 0.03533551988607988,
+            "n_splits": 40,
+            "ap": 0.08487484737484736
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3075361265718409,
+            "val_selected_f1_std": 0.06888659996572533,
+            "n_splits": 40,
+            "ap": 0.14837022569444444
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.33512444071655034,
+            "val_selected_f1_std": 0.0172384355184517,
+            "n_splits": 40,
+            "ap": 0.20035019938907414
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.37152412152412156,
+            "val_selected_f1_std": 0.0682163130838756,
+            "n_splits": 37,
+            "ap": 0.22630855029769112
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17455373631618842,
+            "val_selected_f1_std": 0.005985360729225179,
+            "n_splits": 15,
+            "ap": 0.0688525466303244
+          }
+        }
+      },
+      "unet_s20261024": {
+        "val_selected_f1_mean": 0.2346735002013877,
+        "val_selected_f1_std": 0.020572838175253422,
+        "precision_mean": 0.36110243922743923,
+        "recall_mean": 0.2601286689864365,
+        "delay_median_days_mean": 0.8301200646243074,
+        "delay_abs_median_days_mean": 27.813067403295854,
+        "recall_by_snr": {
+          "3-5": 0.10440234660715383,
+          "5-10": 0.12988654485552395,
+          ">10": 0.2690848388224453
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1021152576098518,
+        "f1_oracle": 0.2448656004599677,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.07403905122655123,
+            "val_selected_f1_std": 0.03862529852855684,
+            "n_splits": 40,
+            "ap": 0.014660493827160493
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2581303308360381,
+            "val_selected_f1_std": 0.09138066920054005,
+            "n_splits": 40,
+            "ap": 0.10038390790343917
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.2633187823296061,
+            "val_selected_f1_std": 0.018389385469509696,
+            "n_splits": 40,
+            "ap": 0.13041380654089307
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.14493710537129376,
+            "val_selected_f1_std": 0.07856811742830037,
+            "n_splits": 37,
+            "ap": 0.045955804740526955
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.19864794464794464,
+            "val_selected_f1_std": 0.008784305404981742,
+            "n_splits": 15,
+            "ap": 0.0653365667254556
+          }
+        }
+      },
+      "unet_s20261025": {
+        "val_selected_f1_mean": 0.3161418827646314,
+        "val_selected_f1_std": 0.019717838185472448,
+        "precision_mean": 0.41360990249061835,
+        "recall_mean": 0.41753785094925194,
+        "delay_median_days_mean": 0.8440730575538324,
+        "delay_abs_median_days_mean": 23.367709831148765,
+        "recall_by_snr": {
+          "3-5": 0.13667823580673058,
+          "5-10": 0.19170422677696677,
+          ">10": 0.3515823416219718
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.18755606932494154,
+        "f1_oracle": 0.3225945631724705,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11289730235042734,
+            "val_selected_f1_std": 0.04570719253626288,
+            "n_splits": 40,
+            "ap": 0.0424244222855334
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3544055944055944,
+            "val_selected_f1_std": 0.09466237379081492,
+            "n_splits": 40,
+            "ap": 0.18704356728662283
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3369870466270789,
+            "val_selected_f1_std": 0.017229557437750707,
+            "n_splits": 40,
+            "ap": 0.20568128890796428
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.38164557295654855,
+            "val_selected_f1_std": 0.05728903012586873,
+            "n_splits": 37,
+            "ap": 0.22545051345687914
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.18127572016460902,
+            "val_selected_f1_std": 0.00022768861529732736,
+            "n_splits": 15,
+            "ap": 0.06843284030784029
+          }
+        }
+      },
+      "unet_s20261026": {
+        "val_selected_f1_mean": 0.30337546156355766,
+        "val_selected_f1_std": 0.019262918677301705,
+        "precision_mean": 0.3937525551133563,
+        "recall_mean": 0.41930522142237187,
+        "delay_median_days_mean": -3.004056882074501,
+        "delay_abs_median_days_mean": 29.704332429620564,
+        "recall_by_snr": {
+          "3-5": 0.13092930526126287,
+          "5-10": 0.1787707252146457,
+          ">10": 0.35512587285114455
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.20266247192846978,
+        "f1_oracle": 0.31586966353095575,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.16144466632622692,
+            "val_selected_f1_std": 0.07518322755656923,
+            "n_splits": 40,
+            "ap": 0.08650592024775029
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3079767106120626,
+            "val_selected_f1_std": 0.08900821989073211,
+            "n_splits": 40,
+            "ap": 0.17397584283000944
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.319668785522843,
+            "val_selected_f1_std": 0.018551445711881203,
+            "n_splits": 40,
+            "ap": 0.199219325370679
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3925978122062846,
+            "val_selected_f1_std": 0.06824173250047162,
+            "n_splits": 37,
+            "ap": 0.292151755335193
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17438947004464248,
+            "val_selected_f1_std": 0.0071112856181771164,
+            "n_splits": 15,
+            "ap": 0.06493757014590347
+          }
+        }
+      },
+      "tcn_s20261007": {
+        "val_selected_f1_mean": 0.30232304915875835,
+        "val_selected_f1_std": 0.017851793980254337,
+        "precision_mean": 0.3665686667067378,
+        "recall_mean": 0.428421655585116,
+        "delay_median_days_mean": -4.584722429400438,
+        "delay_abs_median_days_mean": 34.20393464384449,
+        "recall_by_snr": {
+          "3-5": 0.1495115244292459,
+          "5-10": 0.20152709904793964,
+          ">10": 0.3797272568268122
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1902773920570473,
+        "f1_oracle": 0.3107133454128916,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.12336863912231558,
+            "val_selected_f1_std": 0.02874752343015978,
+            "n_splits": 40,
+            "ap": 0.06589186704927444
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2819795661123199,
+            "val_selected_f1_std": 0.0881468300259384,
+            "n_splits": 40,
+            "ap": 0.13050440228174603
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.33276959306086734,
+            "val_selected_f1_std": 0.017912561410158682,
+            "n_splits": 40,
+            "ap": 0.2011618545525801
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3581817545308418,
+            "val_selected_f1_std": 0.06018506153666519,
+            "n_splits": 37,
+            "ap": 0.2389918629059991
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.16677272719833477,
+            "val_selected_f1_std": 0.014817318224607292,
+            "n_splits": 15,
+            "ap": 0.06694223985890652
+          }
+        }
+      },
+      "tcn_s20261008": {
+        "val_selected_f1_mean": 0.3186851956920248,
+        "val_selected_f1_std": 0.017924832786623105,
+        "precision_mean": 0.3975121786316005,
+        "recall_mean": 0.4387483640748477,
+        "delay_median_days_mean": -4.682263577930505,
+        "delay_abs_median_days_mean": 39.925767418376424,
+        "recall_by_snr": {
+          "3-5": 0.1521256899013795,
+          "5-10": 0.1920769460496328,
+          ">10": 0.3754972084860819
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.20459944637307814,
+        "f1_oracle": 0.3263699494350679,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.12505100281662784,
+            "val_selected_f1_std": 0.04107555726050323,
+            "n_splits": 40,
+            "ap": 0.061448222559333666
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3338168123212766,
+            "val_selected_f1_std": 0.07976804969582993,
+            "n_splits": 40,
+            "ap": 0.18092996035921383
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3432725911684484,
+            "val_selected_f1_std": 0.01737189168744569,
+            "n_splits": 40,
+            "ap": 0.20352947003982608
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.38909034025313094,
+            "val_selected_f1_std": 0.05025616567564562,
+            "n_splits": 37,
+            "ap": 0.27398566054430246
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.16839826839826838,
+            "val_selected_f1_std": 0.004815481661696231,
+            "n_splits": 15,
+            "ap": 0.06541735795962848
+          }
+        }
+      },
+      "tcn_s20261009": {
+        "val_selected_f1_mean": 0.0,
+        "val_selected_f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "delay_median_days_mean": NaN,
+        "delay_abs_median_days_mean": NaN,
+        "recall_by_snr": {
+          "3-5": 0.0,
+          "5-10": 0.0,
+          ">10": 0.0
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.0,
+        "f1_oracle": 0.0,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 40,
+            "ap": 0.0
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 37,
+            "ap": 0.0
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.0,
+            "val_selected_f1_std": 0.0,
+            "n_splits": 15,
+            "ap": 0.0
+          }
+        }
+      },
+      "tcn_s20261010": {
+        "val_selected_f1_mean": 0.30153961519612726,
+        "val_selected_f1_std": 0.019207469099256417,
+        "precision_mean": 0.38693988476887653,
+        "recall_mean": 0.4158801588360358,
+        "delay_median_days_mean": -1.6724710418521105,
+        "delay_abs_median_days_mean": 27.5267717178057,
+        "recall_by_snr": {
+          "3-5": 0.13597384174032312,
+          "5-10": 0.2015394960928897,
+          ">10": 0.3627039632689115
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.19846596362627872,
+        "f1_oracle": 0.31169098101734954,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11620494637466619,
+            "val_selected_f1_std": 0.030723894390039787,
+            "n_splits": 40,
+            "ap": 0.07130965099715102
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.27861834773519556,
+            "val_selected_f1_std": 0.07582203162228061,
+            "n_splits": 40,
+            "ap": 0.14101116187053686
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.33126912232186234,
+            "val_selected_f1_std": 0.01862798141999392,
+            "n_splits": 40,
+            "ap": 0.20775881932951418
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.38325667471529307,
+            "val_selected_f1_std": 0.06035771458859959,
+            "n_splits": 37,
+            "ap": 0.29476407362499185
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.16539436890124293,
+            "val_selected_f1_std": 0.006794564027150063,
+            "n_splits": 15,
+            "ap": 0.06588179851337746
+          }
+        }
+      },
+      "tcn_s20261011": {
+        "val_selected_f1_mean": 0.3099260928838783,
+        "val_selected_f1_std": 0.019748783880395714,
+        "precision_mean": 0.43843727572969565,
+        "recall_mean": 0.39733211708988286,
+        "delay_median_days_mean": -1.0446732707571051,
+        "delay_abs_median_days_mean": 21.437357702820055,
+        "recall_by_snr": {
+          "3-5": 0.12060812348797226,
+          "5-10": 0.1653161681837742,
+          ">10": 0.34256187953419104
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.2068130083505515,
+        "f1_oracle": 0.3183444515199063,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11102360085448319,
+            "val_selected_f1_std": 0.028714439658034354,
+            "n_splits": 40,
+            "ap": 0.05614146446347533
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.31508172878708596,
+            "val_selected_f1_std": 0.07407689211861365,
+            "n_splits": 40,
+            "ap": 0.16166314841119528
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.33186843060376103,
+            "val_selected_f1_std": 0.020191068145865694,
+            "n_splits": 40,
+            "ap": 0.20210037492089902
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.42954930038263367,
+            "val_selected_f1_std": 0.04470589671946527,
+            "n_splits": 37,
+            "ap": 0.2972862806900797
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17823665223665222,
+            "val_selected_f1_std": 0.009673540474035517,
+            "n_splits": 15,
+            "ap": 0.10195473251028807
+          }
+        }
+      },
+      "tcn_s20261012": {
+        "val_selected_f1_mean": 0.30773333188033414,
+        "val_selected_f1_std": 0.016924635892408304,
+        "precision_mean": 0.41180858632039286,
+        "recall_mean": 0.38569680083354874,
+        "delay_median_days_mean": -0.6094566312102799,
+        "delay_abs_median_days_mean": 20.002518094955395,
+        "recall_by_snr": {
+          "3-5": 0.11637063840792108,
+          "5-10": 0.18816218709319074,
+          ">10": 0.33310102986268586
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.19164732821022296,
+        "f1_oracle": 0.3175632753085495,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.14513888888888887,
+            "val_selected_f1_std": 0.04145773486763287,
+            "n_splits": 40,
+            "ap": 0.0577678745704108
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3298315854119426,
+            "val_selected_f1_std": 0.08995159818694394,
+            "n_splits": 40,
+            "ap": 0.1626785505518144
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3210503775851138,
+            "val_selected_f1_std": 0.01691676895122025,
+            "n_splits": 40,
+            "ap": 0.19803548194181483
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.40561833906110173,
+            "val_selected_f1_std": 0.051353890726850544,
+            "n_splits": 37,
+            "ap": 0.2303000915515383
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.17429792429792426,
+            "val_selected_f1_std": 0.0008383474509469996,
+            "n_splits": 15,
+            "ap": 0.06620718462823726
+          }
+        }
+      },
+      "tcn_s20261013": {
+        "val_selected_f1_mean": 0.308293746699432,
+        "val_selected_f1_std": 0.018182406519629272,
+        "precision_mean": 0.39803980698092,
+        "recall_mean": 0.4107615647868307,
+        "delay_median_days_mean": -2.1370816050943326,
+        "delay_abs_median_days_mean": 27.439940324573364,
+        "recall_by_snr": {
+          "3-5": 0.12674927777679987,
+          "5-10": 0.18882097706458983,
+          ">10": 0.3668160814077195
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.19319708145134212,
+        "f1_oracle": 0.31583844009116757,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.10799659735689146,
+            "val_selected_f1_std": 0.02513790049310956,
+            "n_splits": 40,
+            "ap": 0.05083407461879684
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.307647840053896,
+            "val_selected_f1_std": 0.09016890423090111,
+            "n_splits": 40,
+            "ap": 0.14308373195091945
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.33604959686233643,
+            "val_selected_f1_std": 0.019354371141275948,
+            "n_splits": 40,
+            "ap": 0.20796407479525678
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.3741982346657144,
+            "val_selected_f1_std": 0.0682617032929125,
+            "n_splits": 37,
+            "ap": 0.23444428924690588
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.1843377053054472,
+            "val_selected_f1_std": 0.00331150744757074,
+            "n_splits": 15,
+            "ap": 0.07428873108697669
+          }
+        }
+      },
+      "tcn_s20261014": {
+        "val_selected_f1_mean": 0.2840115751833003,
+        "val_selected_f1_std": 0.018343542746819312,
+        "precision_mean": 0.44525883878254574,
+        "recall_mean": 0.335064011567073,
+        "delay_median_days_mean": 0.31692505177336444,
+        "delay_abs_median_days_mean": 9.594936741028727,
+        "recall_by_snr": {
+          "3-5": 0.08890037384255375,
+          "5-10": 0.15988600157294447,
+          ">10": 0.3020753171803894
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.166601091718475,
+        "f1_oracle": 0.29305147905610907,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11819517577330077,
+            "val_selected_f1_std": 0.0702079361862294,
+            "n_splits": 40,
+            "ap": 0.04484310699588477
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.2571523831192396,
+            "val_selected_f1_std": 0.08348096657153496,
+            "n_splits": 40,
+            "ap": 0.10960189694564695
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3076027548590724,
+            "val_selected_f1_std": 0.020025608171146285,
+            "n_splits": 40,
+            "ap": 0.19229122511659308
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.39625128236239354,
+            "val_selected_f1_std": 0.03921889837679242,
+            "n_splits": 37,
+            "ap": 0.21367899161880638
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.19632451499118167,
+            "val_selected_f1_std": 0.003618904412367338,
+            "n_splits": 15,
+            "ap": 0.07021604938271606
+          }
+        }
+      },
+      "tcn_s20261015": {
+        "val_selected_f1_mean": 0.298081533200791,
+        "val_selected_f1_std": 0.019275539406489423,
+        "precision_mean": 0.469064730767317,
+        "recall_mean": 0.33793282599570146,
+        "delay_median_days_mean": 0.7355830214938933,
+        "delay_abs_median_days_mean": 7.824034358022689,
+        "recall_by_snr": {
+          "3-5": 0.09525930624400673,
+          "5-10": 0.15637700126945125,
+          ">10": 0.28290264580414437
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.1804113411895123,
+        "f1_oracle": 0.3079436979330587,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.11836152447089947,
+            "val_selected_f1_std": 0.04799304185900401,
+            "n_splits": 40,
+            "ap": 0.038766718106995876
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.3238767702987628,
+            "val_selected_f1_std": 0.09149938927317097,
+            "n_splits": 40,
+            "ap": 0.13426292156435385
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3107621349273994,
+            "val_selected_f1_std": 0.017209278849594813,
+            "n_splits": 40,
+            "ap": 0.1847192456255194
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.42823141777316004,
+            "val_selected_f1_std": 0.043929834840430004,
+            "n_splits": 37,
+            "ap": 0.34901587010383306
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.1965540632207299,
+            "val_selected_f1_std": 0.014318761754088178,
+            "n_splits": 15,
+            "ap": 0.07563198118753674
+          }
+        }
+      },
+      "tcn_s20261016": {
+        "val_selected_f1_mean": 0.29638262065689835,
+        "val_selected_f1_std": 0.017605580894546932,
+        "precision_mean": 0.36764665196978896,
+        "recall_mean": 0.41511382433095045,
+        "delay_median_days_mean": -4.777754928620501,
+        "delay_abs_median_days_mean": 38.614451565584844,
+        "recall_by_snr": {
+          "3-5": 0.14381432385988369,
+          "5-10": 0.18188717555595174,
+          ">10": 0.3600300264690276
+        },
+        "n_true_events_mean": 834.625,
+        "ap": 0.19581550426801475,
+        "f1_oracle": 0.3086916304902349,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.12176163756586549,
+            "val_selected_f1_std": 0.02701951179525519,
+            "n_splits": 40,
+            "ap": 0.06640748964743218
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.29251573362240657,
+            "val_selected_f1_std": 0.0819192179081907,
+            "n_splits": 40,
+            "ap": 0.17285360424683344
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.3219839070304168,
+            "val_selected_f1_std": 0.01793694960509424,
+            "n_splits": 40,
+            "ap": 0.19810291137618893
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.35222371583046486,
+            "val_selected_f1_std": 0.07295755710554055,
+            "n_splits": 37,
+            "ap": 0.20513837578459493
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.155872246454237,
+            "val_selected_f1_std": 0.010981006408554098,
+            "n_splits": 15,
+            "ap": 0.06787808641975307
+          }
+        }
+      }
+    },
+    "summary": {
+      "unet_val_selected_f1_mean": 0.2323451923778126,
+      "unet_ap": 0.1348061000699958,
+      "unet_precision_mean": 0.3287402816735212,
+      "unet_recall_mean": 0.3024144359839146,
+      "unet_delay_median_days_mean": NaN,
+      "unet_delay_abs_median_days_mean": NaN,
+      "unet_f1_oracle": 0.23921543134429415,
+      "unet_val_selected_f1_std": 0.10738218014819646,
+      "unet_n_seeds": 20,
+      "unet_per_seed": {
+        "unet_s20261007": {
+          "val_selected_f1_mean": 0.22302703330940615,
+          "ap": 0.10327378309708835,
+          "precision_mean": 0.34391342015264426,
+          "recall_mean": 0.2530606776925829,
+          "delay_median_days_mean": -0.4717467318509179,
+          "delay_abs_median_days_mean": 24.70686003606472
+        },
+        "unet_s20261008": {
+          "val_selected_f1_mean": 0.0003553549483120076,
+          "ap": 2.6758729670663286e-06,
+          "precision_mean": 0.008908045977011494,
+          "recall_mean": 0.000181302556577685,
+          "delay_median_days_mean": -13.777766774529505,
+          "delay_abs_median_days_mean": 16.627485157561036
+        },
+        "unet_s20261009": {
+          "val_selected_f1_mean": 0.2357449298354261,
+          "ap": 0.10828327575506093,
+          "precision_mean": 0.3747903302207975,
+          "recall_mean": 0.26329262517163576,
+          "delay_median_days_mean": 0.9922146872176327,
+          "delay_abs_median_days_mean": 23.20830998337425
+        },
+        "unet_s20261010": {
+          "val_selected_f1_mean": 0.19265512521656963,
+          "ap": 0.08539131069246925,
+          "precision_mean": 0.3750912409119079,
+          "recall_mean": 0.22605091670403002,
+          "delay_median_days_mean": -0.4702885274668539,
+          "delay_abs_median_days_mean": 33.48687464902948
+        },
+        "unet_s20261011": {
+          "val_selected_f1_mean": 0.2974170049922026,
+          "ap": 0.16888958693013392,
+          "precision_mean": 0.38949322166170547,
+          "recall_mean": 0.3902658881635216,
+          "delay_median_days_mean": -0.8249223471505907,
+          "delay_abs_median_days_mean": 29.616315183725455
+        },
+        "unet_s20261012": {
+          "val_selected_f1_mean": 0.30706189573162573,
+          "ap": 0.18994567524161643,
+          "precision_mean": 0.42870498405651736,
+          "recall_mean": 0.3949458914448946,
+          "delay_median_days_mean": 0.2802779053479384,
+          "delay_abs_median_days_mean": 22.552852399024935
+        },
+        "unet_s20261013": {
+          "val_selected_f1_mean": 0.28961513238328435,
+          "ap": 0.17973885082238056,
+          "precision_mean": 0.4051606702005374,
+          "recall_mean": 0.3654939409742609,
+          "delay_median_days_mean": -0.843577397287197,
+          "delay_abs_median_days_mean": 23.481656368391057
+        },
+        "unet_s20261014": {
+          "val_selected_f1_mean": 0.30863854248907796,
+          "ap": 0.1900726220882878,
+          "precision_mean": 0.3935443791182833,
+          "recall_mean": 0.4313310353976153,
+          "delay_median_days_mean": -3.7734971281316483,
+          "delay_abs_median_days_mean": 33.859168267955035
+        },
+        "unet_s20261015": {
+          "val_selected_f1_mean": 0.30326984429129605,
+          "ap": 0.1927204938274797,
+          "precision_mean": 0.43303778831517725,
+          "recall_mean": 0.3829436471023752,
+          "delay_median_days_mean": 0.21007350059552649,
+          "delay_abs_median_days_mean": 16.505651806232464
+        },
+        "unet_s20261016": {
+          "val_selected_f1_mean": 0.000203544061302682,
+          "ap": 7.027545166032782e-07,
+          "precision_mean": 0.004885057471264368,
+          "recall_mean": 0.00010393739300562485,
+          "delay_median_days_mean": 76.64920942623303,
+          "delay_abs_median_days_mean": 76.64920942623303
+        },
+        "unet_s20261017": {
+          "val_selected_f1_mean": 0.2543456170317522,
+          "ap": 0.16625989666095078,
+          "precision_mean": 0.3107523270138949,
+          "recall_mean": 0.4053606193928088,
+          "delay_median_days_mean": -18.253108257490055,
+          "delay_abs_median_days_mean": 52.106932943086484
+        },
+        "unet_s20261018": {
+          "val_selected_f1_mean": 0.28952094625748404,
+          "ap": 0.17694212512693344,
+          "precision_mean": 0.3558179027170677,
+          "recall_mean": 0.42244243719700547,
+          "delay_median_days_mean": -13.34469237992098,
+          "delay_abs_median_days_mean": 46.87375157210302
+        },
+        "unet_s20261019": {
+          "val_selected_f1_mean": 0.2927358029377497,
+          "ap": 0.18291630427733743,
+          "precision_mean": 0.39665716261050943,
+          "recall_mean": 0.38564200010542093,
+          "delay_median_days_mean": -0.6727812928830879,
+          "delay_abs_median_days_mean": 30.227932412624874
+        },
+        "unet_s20261020": {
+          "val_selected_f1_mean": 0.2983315999829417,
+          "ap": 0.1862560272581669,
+          "precision_mean": 0.40439278343646007,
+          "recall_mean": 0.3940273940855414,
+          "delay_median_days_mean": -3.116576486361505,
+          "delay_abs_median_days_mean": 32.63782157766032
+        },
+        "unet_s20261021": {
+          "val_selected_f1_mean": 0.0,
+          "ap": 0.0,
+          "precision_mean": 0.0,
+          "recall_mean": 0.0,
+          "delay_median_days_mean": NaN,
+          "delay_abs_median_days_mean": NaN
+        },
+        "unet_s20261022": {
+          "val_selected_f1_mean": 0.18935597459389208,
+          "ap": 0.07928647907426771,
+          "precision_mean": 0.3652249384602325,
+          "recall_mean": 0.22024928518451636,
+          "delay_median_days_mean": -11.452972534099247,
+          "delay_abs_median_days_mean": 50.80981454700897
+        },
+        "unet_s20261023": {
+          "val_selected_f1_mean": 0.31043465496435174,
+          "ap": 0.1938083930569962,
+          "precision_mean": 0.4159664843149994,
+          "recall_mean": 0.41592537975443855,
+          "delay_median_days_mean": -1.5765949674409092,
+          "delay_abs_median_days_mean": 26.344847775939876
+        },
+        "unet_s20261024": {
+          "val_selected_f1_mean": 0.2346735002013877,
+          "ap": 0.1021152576098518,
+          "precision_mean": 0.36110243922743923,
+          "recall_mean": 0.2601286689864365,
+          "delay_median_days_mean": 0.8301200646243074,
+          "delay_abs_median_days_mean": 27.813067403295854
+        },
+        "unet_s20261025": {
+          "val_selected_f1_mean": 0.3161418827646314,
+          "ap": 0.18755606932494154,
+          "precision_mean": 0.41360990249061835,
+          "recall_mean": 0.41753785094925194,
+          "delay_median_days_mean": 0.8440730575538324,
+          "delay_abs_median_days_mean": 23.367709831148765
+        },
+        "unet_s20261026": {
+          "val_selected_f1_mean": 0.30337546156355766,
+          "ap": 0.20266247192846978,
+          "precision_mean": 0.3937525551133563,
+          "recall_mean": 0.41930522142237187,
+          "delay_median_days_mean": -3.004056882074501,
+          "delay_abs_median_days_mean": 29.704332429620564
+        }
+      },
+      "unet_by_region": {
+        "Europe": {
+          "n_stations": 6,
+          "f1_mean": 0.10113155078554792,
+          "f1_std_across_seeds": 0.050312582821357046,
+          "ap_mean": 0.04480764398778252
+        },
+        "North America": {
+          "n_stations": 8,
+          "f1_mean": 0.23014725580983747,
+          "f1_std_across_seeds": 0.12258714622034214,
+          "ap_mean": 0.10862227618923068
+        },
+        "Asia": {
+          "n_stations": 39,
+          "f1_mean": 0.25092028254828946,
+          "f1_std_across_seeds": 0.11553063497040775,
+          "ap_mean": 0.14411490256768608
+        },
+        "Pacific": {
+          "n_stations": 4,
+          "f1_mean": 0.2796013420196433,
+          "f1_std_across_seeds": 0.15264651579214222,
+          "ap_mean": 0.1679088609575308
+        },
+        "other": {
+          "n_stations": 1,
+          "f1_mean": 0.1463471123627235,
+          "f1_std_across_seeds": 0.0658845643900173,
+          "ap_mean": 0.05436517990538394
+        }
+      },
+      "tcn_val_selected_f1_mean": 0.27269767605515444,
+      "tcn_ap": 0.17278281572445228,
+      "tcn_precision_mean": 0.3681276620657875,
+      "tcn_recall_mean": 0.3564951323099987,
+      "tcn_delay_median_days_mean": NaN,
+      "tcn_delay_abs_median_days_mean": NaN,
+      "tcn_f1_oracle": 0.2810207250264335,
+      "tcn_val_selected_f1_std": 0.09626482467941033,
+      "tcn_n_seeds": 10,
+      "tcn_per_seed": {
+        "tcn_s20261007": {
+          "val_selected_f1_mean": 0.30232304915875835,
+          "ap": 0.1902773920570473,
+          "precision_mean": 0.3665686667067378,
+          "recall_mean": 0.428421655585116,
+          "delay_median_days_mean": -4.584722429400438,
+          "delay_abs_median_days_mean": 34.20393464384449
+        },
+        "tcn_s20261008": {
+          "val_selected_f1_mean": 0.3186851956920248,
+          "ap": 0.20459944637307814,
+          "precision_mean": 0.3975121786316005,
+          "recall_mean": 0.4387483640748477,
+          "delay_median_days_mean": -4.682263577930505,
+          "delay_abs_median_days_mean": 39.925767418376424
+        },
+        "tcn_s20261009": {
+          "val_selected_f1_mean": 0.0,
+          "ap": 0.0,
+          "precision_mean": 0.0,
+          "recall_mean": 0.0,
+          "delay_median_days_mean": NaN,
+          "delay_abs_median_days_mean": NaN
+        },
+        "tcn_s20261010": {
+          "val_selected_f1_mean": 0.30153961519612726,
+          "ap": 0.19846596362627872,
+          "precision_mean": 0.38693988476887653,
+          "recall_mean": 0.4158801588360358,
+          "delay_median_days_mean": -1.6724710418521105,
+          "delay_abs_median_days_mean": 27.5267717178057
+        },
+        "tcn_s20261011": {
+          "val_selected_f1_mean": 0.3099260928838783,
+          "ap": 0.2068130083505515,
+          "precision_mean": 0.43843727572969565,
+          "recall_mean": 0.39733211708988286,
+          "delay_median_days_mean": -1.0446732707571051,
+          "delay_abs_median_days_mean": 21.437357702820055
+        },
+        "tcn_s20261012": {
+          "val_selected_f1_mean": 0.30773333188033414,
+          "ap": 0.19164732821022296,
+          "precision_mean": 0.41180858632039286,
+          "recall_mean": 0.38569680083354874,
+          "delay_median_days_mean": -0.6094566312102799,
+          "delay_abs_median_days_mean": 20.002518094955395
+        },
+        "tcn_s20261013": {
+          "val_selected_f1_mean": 0.308293746699432,
+          "ap": 0.19319708145134212,
+          "precision_mean": 0.39803980698092,
+          "recall_mean": 0.4107615647868307,
+          "delay_median_days_mean": -2.1370816050943326,
+          "delay_abs_median_days_mean": 27.439940324573364
+        },
+        "tcn_s20261014": {
+          "val_selected_f1_mean": 0.2840115751833003,
+          "ap": 0.166601091718475,
+          "precision_mean": 0.44525883878254574,
+          "recall_mean": 0.335064011567073,
+          "delay_median_days_mean": 0.31692505177336444,
+          "delay_abs_median_days_mean": 9.594936741028727
+        },
+        "tcn_s20261015": {
+          "val_selected_f1_mean": 0.298081533200791,
+          "ap": 0.1804113411895123,
+          "precision_mean": 0.469064730767317,
+          "recall_mean": 0.33793282599570146,
+          "delay_median_days_mean": 0.7355830214938933,
+          "delay_abs_median_days_mean": 7.824034358022689
+        },
+        "tcn_s20261016": {
+          "val_selected_f1_mean": 0.29638262065689835,
+          "ap": 0.19581550426801475,
+          "precision_mean": 0.36764665196978896,
+          "recall_mean": 0.41511382433095045,
+          "delay_median_days_mean": -4.777754928620501,
+          "delay_abs_median_days_mean": 38.614451565584844
+        }
+      },
+      "tcn_by_region": {
+        "Europe": {
+          "n_stations": 6,
+          "f1_mean": 0.10871020132239388,
+          "f1_std_across_seeds": 0.039500117805538394,
+          "ap_mean": 0.0513410469008755
+        },
+        "North America": {
+          "n_stations": 8,
+          "f1_mean": 0.27205207674621257,
+          "f1_std_across_seeds": 0.09874351056539703,
+          "ap_mean": 0.133658937818226
+        },
+        "Asia": {
+          "n_stations": 39,
+          "f1_mean": 0.2936628508419278,
+          "f1_std_across_seeds": 0.10378275016676468,
+          "ap_mean": 0.17956634576981922
+        },
+        "Pacific": {
+          "n_stations": 4,
+          "f1_mean": 0.35166010595747343,
+          "f1_std_across_seeds": 0.12624701046176864,
+          "ap_mean": 0.23376054960710518
+        },
+        "other": {
+          "n_stations": 1,
+          "f1_mean": 0.15861884710040183,
+          "f1_std_across_seeds": 0.057279492576608027,
+          "ap_mean": 0.06544181615474202
+        }
+      },
+      "classical": {
+        "val_selected_f1_mean": 0.4565530186472852,
+        "ap": 0.32244903146927834,
+        "precision_mean": 0.49019946467985226,
+        "recall_mean": 0.5361332050923913,
+        "delay_median_days_mean": -51.455347749688926,
+        "delay_abs_median_days_mean": 69.71533998813943,
+        "f1_oracle": 0.46799918001985397,
+        "recall_by_snr": {
+          "3-5": 0.3982991189509919,
+          "5-10": 0.6095939785576061,
+          ">10": 0.8482201820058087
+        },
+        "n_true_events_mean": 834.625,
+        "by_region": {
+          "Europe": {
+            "n_stations": 6,
+            "val_selected_f1_mean": 0.26666732804232807,
+            "val_selected_f1_std": 0.14324410535599985,
+            "n_splits": 40,
+            "ap": 0.16669640057797952
+          },
+          "North America": {
+            "n_stations": 8,
+            "val_selected_f1_mean": 0.42614504114166163,
+            "val_selected_f1_std": 0.13580758662418874,
+            "n_splits": 40,
+            "ap": 0.2681743126080466
+          },
+          "Asia": {
+            "n_stations": 39,
+            "val_selected_f1_mean": 0.48818603910517033,
+            "val_selected_f1_std": 0.021753745307418103,
+            "n_splits": 40,
+            "ap": 0.3755729175113233
+          },
+          "Pacific": {
+            "n_stations": 4,
+            "val_selected_f1_mean": 0.4940770486725795,
+            "val_selected_f1_std": 0.03959954333035224,
+            "n_splits": 37,
+            "ap": 0.2852760955263343
+          },
+          "other": {
+            "n_stations": 1,
+            "val_selected_f1_mean": 0.4874915824915825,
+            "val_selected_f1_std": 0.03017150187210632,
+            "n_splits": 15,
+            "ap": 0.32828160199742845
+          }
+        }
+      },
+      "region_counts": {
+        "Europe": 6,
+        "North America": 8,
+        "Asia": 39,
+        "Pacific": 4,
+        "other": 1
+      }
+    }
+  },
+  "synthetic_reference": {
+    "2": {
+      "classical": {
+        "ap": 0.032438156840336366,
+        "f1_opt": 0.0792548500881834,
+        "val_selected_f1": 0.07299962028106918
+      },
+      "unet": {
+        "ap_mean": 2.143347050754458e-06,
+        "f1_opt_mean": 0.00041666666666666664,
+        "f1_opt_std": 0.0012912390909540887,
+        "val_selected_f1": 0.0004583333333333334
+      }
+    },
+    "4": {
+      "classical": {
+        "ap": 0.14252144805833364,
+        "f1_opt": 0.2650147691814358,
+        "val_selected_f1": 0.2587743532187977
+      },
+      "unet": {
+        "ap_mean": 0.0028450584623424128,
+        "f1_opt_mean": 0.04159465020576132,
+        "f1_opt_std": 0.022541390872877445,
+        "val_selected_f1": 0.03948622134038801
+      }
+    },
+    "8": {
+      "classical": {
+        "ap": 0.7875399994418913,
+        "f1_opt": 0.8140652557319222,
+        "val_selected_f1": 0.8145701058201057
+      },
+      "unet": {
+        "ap_mean": 0.29782827911685944,
+        "f1_opt_mean": 0.4566498316498312,
+        "f1_opt_std": 0.22502819798116985,
+        "val_selected_f1": 0.4598692179733847
+      }
+    },
+    "16": {
+      "classical": {
+        "ap": 0.20804051958454128,
+        "f1_opt": 0.9688271604938272,
+        "val_selected_f1": 0.9628615520282185
+      },
+      "unet": {
+        "ap_mean": 0.6483914214405473,
+        "f1_opt_mean": 0.7112345679012347,
+        "f1_opt_std": 0.34375576990536777,
+        "val_selected_f1": 0.7088644179894179
+      }
+    },
+    "25": {
+      "classical": {
+        "ap": 0.006659786363085854,
+        "f1_opt": 0.9743827160493829,
+        "val_selected_f1": 0.9751763668430335
+      },
+      "unet": {
+        "ap_mean": 0.6685357367398265,
+        "f1_opt_mean": 0.7255445326278661,
+        "f1_opt_std": 0.349588382160906,
+        "val_selected_f1": 0.7252289462081128
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The three tasks do not support a single verdict, and the differences between
+them are more informative than any average. The first version of this benchmark
+reported a uniform classical win. Three of its ingredients do not survive the
+revised protocol: the truth sat inside the parametric basis, the learned gap
+filler was evaluated under a normalisation it was not trained with, and the
+downstream noise model was re-estimated on denoised outputs. Correcting them
+reverses the gap-filling verdict, makes the denoising verdict conditional, and
+leaves detection negative.
+
+\paragraph{The denoising advantage is a property of the truth family.}
+On the in-family truth the trajectory model removes $0.790$ of the injected
+error and the RTS smoother $0.791$, while the U-Net removes $0.366 \pm 0.002$
+and the model-free decompositions lie between $0.232$ and $0.349$. That ordering
+is expected: the truth is a trend plus constant harmonics with mild modulation,
+which is almost exactly the basis of the parametric estimator. Moving the truth
+outside that basis changes the ranking. The trajectory model falls to $-0.106$
+and the RTS smoother to $-0.104$: on a signal it cannot represent, the fit adds
+error rather than removing it. The model-free decompositions barely move, and
+the U-Net, trained on the matching out-of-family generator, does not degrade at
+all: it scores $0.363 \pm 0.001$. Scored with per-window normalisation, it is
+above every model-free decomposition in both families. On the synthetic grid it
+reaches $0.389 \pm 0.001$ in-family and $0.381 \pm 0.001$ out-of-family, against
+$0.320$ and $0.318$ for the moving median and $0.317$ and $0.312$ for the
+wavelet. The defensible statement is therefore narrower than a strong
+learned-denoiser claim: the learned denoiser is the best non-parametric choice
+in both families and the only learned arm that is nearly family-invariant, but
+it remains far below the parametric estimator when the truth lies in its basis.
+The earlier reading, in which the learned denoiser won only on the synthetic
+grid and lost to the wavelet on real stations, was an artefact of whole-series
+normalisation at inference.
+
+\paragraph{Gap filling improves but does not win on the full real set.}
+The first version evaluated the network with whole-series normalisation while
+training it on per-window statistics. Scoring the same ten nets per window
+removes the deficit: at 30 days the per-window U-Net reaches $3.07 \pm 0.03$~mm
+on long synthetic records and $2.74 \pm 0.03$~mm on the 30-series real subset,
+against $3.34$ and $2.93$ for linear interpolation and $3.79$ and $3.35$ for the
+trajectory model. At 5 days it is $0.23$~mm behind SSA on synthetic records and
+$0.05$~mm behind on real ones, and at 120 days the trajectory model remains
+better ($3.99$ against $5.09 \pm 0.08$). The whole-series arm is not a
+competitive configuration at any length. The correction does not extend to the
+full held-out data: across all 201 test component series the U-Net ties linear
+interpolation on NGL ($2.964$ against $2.967$~mm) and falls $0.06$~mm behind on
+JPL ($3.293$ against $3.233$), and it leads by region only in Asia and Europe
+(Sec.~\ref{sec:results:external}). The learned filler is therefore competitive
+at intermediate gaps, and the first version's failure was an inference defect
+rather than an architectural limit, but the corrected result is parity on real
+data, not a product-level win. The defect is also a warning for the field: a
+normalisation mismatch between training and inference can look like a
+model-capacity failure, and a single-seed, single-protocol evaluation cannot
+tell the two apart.
+
+The mechanism behind the win is visible in the signal-error arm. The trajectory
+model's error against the missing true signal stays near $0.7$~mm at every gap
+length, because it extrapolates a low-order trend and harmonics; the
+whole-series network reaches $5.97$~mm at 30 days and $61.0$~mm at 365 days.
+The per-window network inherits the interpolation prior learned over gaps of
+5--120 days, which is why it is competitive in the middle of that range and why
+its advantage should not be extrapolated to year-long gaps, for which no
+per-window measurement was made.
+
+\paragraph{Detection: a better ranking does not give a better operating point.}
+On synthetic offsets the classical detector has the higher validation-selected
+$F_1$ at every amplitude, from $0.073$ against $0.0005$ at 2~mm to $0.975$
+against $0.725$ at 25~mm. The learned field nevertheless has the higher average
+precision at 16 and 25~mm ($0.648$ and $0.669$ against $0.208$ and $0.007$). The
+two metrics answer different questions: average precision integrates over all
+thresholds, while the deployed detector uses one threshold chosen on held-out
+stations. The learned field orders large events well but transfers its operating
+point poorly. On real catalogue labels the gap widens: classical $F_1$ is
+$0.457 \pm 0.027$, the twenty U-Net seeds average $0.232 \pm 0.107$, the ten TCN
+seeds $0.273 \pm 0.096$, and four seeds across the two architectures collapse to
+essentially no detections. Where a learned seed does fire, its matched detections
+sit closer to the catalogued epoch (absolute median delay $16.5$--$52.1$ days for
+the U-Net and $7.8$--$39.9$ days for the TCN, against $69.7$ for the classical
+detector), but it finds fewer events. The catalogue is not ground truth either: its dates may refer to
+the earthquake rather than to the observable break, which is why the real-label
+arm uses a 180-day tolerance. The comparison is nonetheless the one a geodesist
+would make, and it does not show a learned advantage.
+
+\paragraph{What the velocity product inherits.}
+The corrected downstream test removes the earlier warning rather than changing
+its mechanism. With the noise model estimated on the raw series and held fixed,
+the trajectory MLE is unbiased ($-0.0024$~mm\,yr$^{-1}$) with a velocity RMSE of
+$0.0586$~mm\,yr$^{-1}$, and the classical denoisers stay within
+$0.0588$--$0.0616$. The U-Net denoiser reaches $0.0605$ (two seeds, $0.0600$ and
+$0.0611$) with a bias of $-0.0034$, and the U-Net imputer is indistinguishable
+from the classical fillers at $0.0586$. Calibration is $0.649$ for the
+reference, $0.618$--$0.647$ for the classical denoisers and $0.628$ for the
+learned denoiser, with 1$\sigma$ coverage of $0.389$, $0.444$--$0.472$ and
+$0.458$ respectively. The values of the first version ($0.2087$ and $0.197$)
+came from whole-series normalisation, which mismatches the statistics the
+network was trained under; scoring window by window removes them, and the
+learned arm is neither better nor worse than the classical denoisers by more
+than $0.002$~mm\,yr$^{-1}$. Re-estimating the noise on a denoised output, the
+other protocol of the first version, still collapses the reported uncertainty
+for the trajectory and RTS outputs because they leave essentially no residual;
+that arm is reported to explain the earlier number, not as a valid pipeline.
+Adding a random-walk component lowers the reference RMSE from $0.0586$ to
+$0.0690$ and the calibration ratio from $0.649$ to $0.575$; the U-Net denoiser
+reaches $0.0698$ and the imputer $0.0690$, and the ordering is unchanged. The
+product-level rule is therefore weaker than in the first version: no method,
+learned or classical, improves a velocity that the joint trajectory/noise fit
+already estimates, but learned denoising no longer damages the product. The
+decision should be made on the product metric, not on the pointwise signal
+error, because the two do not move together.
+
+\paragraph{Architecture and seeds.}
+The detection result is not a statement about one architecture or one draw. On
+the real labels the seed standard deviation is $0.107$ for the U-Net and
+$0.096$ for the TCN, nearly half the mean in both cases, and on synthetic
+offsets at 8~mm the U-Net seed distribution has a standard deviation of $0.222$
+around a mean of $0.436$. A TCN does better than the U-Net at every amplitude
+above 4~mm ($0.829$ against $0.686$ at 16~mm, $0.791$ against $0.675$ at
+25~mm), and the real-label ranking agrees ($0.273$ against $0.232$), but neither
+reaches the classical operating point. Denoising is architecture-insensitive:
+U-Net, TCN and BiGRU means are $0.364$, $0.365$ and $0.381$. Gap filling
+separates them modestly, with the BiGRU best at 5 and 30 days ($2.378$ and
+$2.892$~mm) and the TCN second ($2.401$ and $2.979$), but the BiGRU costs
+$5.1$~h per seed against $6$~min for the TCN. The seed spread dominates the
+architecture difference in detection; in gap filling the ordering is stable
+across architectures, which is the stronger form of the result.
+
+\paragraph{Limitations.}
+The truth families are still constructed, not observed: the in-family and
+out-of-family signals are deterministic functions with known parameters, and the
+out-of-family generator is one choice among many. The real-label arm scores
+against a catalogue, not against a measured break, and its 3$\sigma$ amplitude
+filter removes weak continuity changes that a detector might still be expected
+to find. All experiments are single-station; common-mode error and network
+filtering are outside the protocol. The downstream arm uses six stations, two
+components, three realisations and two U-Net seeds, so its calibration ratios
+carry a wide interval and are read as a comparison across methods, not as an
+absolute calibration of geodetic uncertainty; the untreated series itself covers
+$0.389$ at 1$\sigma$ because of irregular sampling, and that shortfall is shared
+by every method. The random-walk arm tests one amplitude ($1.0$~mm\,yr$^{-1/2}$)
+and one noise model. The 365-day gap and the 16--25~mm offsets lie at or beyond
+the training support and measure extrapolation rather than in-distribution
+skill. The external centre arm is descriptive: it scores held-out JPL series
+with networks trained on the same generators, not networks retrained at JPL,
+so the design is a single primary analysis centre plus JPL, not a multi-centre
+evaluation; its JPL group contains 18 component series against 183 for NGL. The
+regional split is uneven, with 123 component series in Asia and six in the
+residual group, so regional means outside Asia and North America rest on few
+stations and are read as a consistency check on the ranking rather than as
+regional predictions.

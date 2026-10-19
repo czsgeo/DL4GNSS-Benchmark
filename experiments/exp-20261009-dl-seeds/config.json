@@ -1,0 +1,39 @@
+{
+  "exp_id": "exp-20261009-dl-seeds",
+  "description": "Revision (v2.0) learned baselines. Trains U-Nets and GRU baselines on the in-family and out-of-family injection generators under many independent training seeds, to (i) give the detector a >=20-seed distribution (review M3), (ii) give the out-of-family truth a matched-training denoiser (review M1), and (iii) add a materially different recurrent architecture (review M6). The evaluation of these nets lives in the task-specific revision experiments.",
+  "nets_dir": "nets",
+  "skip_existing": true,
+  "training": {
+    "n_steps": 3000,
+    "batch": 32,
+    "lr": 0.002,
+    "base": 12,
+    "depth": 3,
+    "gru_hidden": 64,
+    "gru_layers": 2,
+    "w": 1024
+  },
+  "plans": {
+    "detect_in": {"arch": "unet", "task": "detect", "family": "in",
+                  "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                            20261012, 20261013, 20261014, 20261015, 20261016,
+                            20261017, 20261018, 20261019, 20261020, 20261021,
+                            20261022, 20261023, 20261024, 20261025, 20261026]},
+    "denoise_in": {"arch": "unet", "task": "denoise", "family": "in",
+                   "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                             20261012, 20261013, 20261014, 20261015, 20261016]},
+    "impute_in": {"arch": "unet", "task": "impute", "family": "in",
+                  "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                            20261012, 20261013, 20261014, 20261015, 20261016]},
+    "denoise_oof": {"arch": "unet", "task": "denoise", "family": "oof",
+                    "seeds": [20261007, 20261008, 20261009, 20261010, 20261011,
+                              20261012, 20261013, 20261014, 20261015, 20261016]},
+    "denoise_gru": {"arch": "gru", "task": "denoise", "family": "in",
+                    "seeds": [20261007, 20261008, 20261009, 20261010,
+                              20261011, 20261012, 20261013, 20261014]},
+    "impute_gru": {"arch": "gru", "task": "impute", "family": "in",
+                   "seeds": [20261007, 20261008, 20261009, 20261010,
+                             20261011, 20261012, 20261013, 20261014]}
+  },
+  "seed": 20261007
+}

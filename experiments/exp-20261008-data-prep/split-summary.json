@@ -1,0 +1,34 @@
+{
+  "folds": {
+    "train": {
+      "n_series": 198,
+      "n_sites": 193,
+      "n_epochs": 1907614,
+      "series_by_source": {
+        "ngl": 176,
+        "jpl": 22
+      }
+    },
+    "val": {
+      "n_series": 68,
+      "n_sites": 64,
+      "n_epochs": 651833,
+      "series_by_source": {
+        "ngl": 61,
+        "jpl": 7
+      }
+    },
+    "test": {
+      "n_series": 67,
+      "n_sites": 64,
+      "n_epochs": 647892,
+      "series_by_source": {
+        "ngl": 61,
+        "jpl": 6
+      }
+    }
+  },
+  "n_series_total": 333,
+  "n_sites_total": 321,
+  "n_dual_source_sites": 12
+}

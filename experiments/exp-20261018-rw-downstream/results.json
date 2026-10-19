@@ -1,0 +1,1528 @@
+{
+  "exp_id": "exp-20261018-rw-downstream",
+  "n_stations": 6,
+  "n_seeds": 3,
+  "models": [
+    "wn",
+    "fn",
+    "rw"
+  ],
+  "noise_levels": {
+    "wn_fn": {
+      "sigma_wn_mm": 1.5,
+      "sigma_fn_mm": 3.0,
+      "sigma_rw_mm": 0.0
+    },
+    "wn_fn_rw": {
+      "sigma_wn_mm": 1.5,
+      "sigma_fn_mm": 3.0,
+      "sigma_rw_mm": 1.0
+    }
+  },
+  "levels": {
+    "wn_fn": {
+      "clean": {
+        "raw": {
+          "naive": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058524134344394275,
+            "calibration_ratio": 0.6488523223365585,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0023711244864547,
+            "vel_rmse_mm_yr": 0.05857214809182752,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5620237641530786,
+              "hi": 0.8202548708318235
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058524134344394275,
+            "calibration_ratio": 0.6488523223365585,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0023711244864547,
+            "vel_rmse_mm_yr": 0.05857214809182752,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5620237641530786,
+              "hi": 0.8202548708318235
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.005435773421456119,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.034776140213633205,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "mle": {
+          "naive": {
+            "sigma_reported_median": 9.76052878103062e-16,
+            "sigma_empirical": 0.058524134344393075,
+            "calibration_ratio": 1.6677784114829423e-14,
+            "coverage_1sigma": 0.0,
+            "coverage_2sigma": 0.0,
+            "vel_bias_mm_yr": -0.0023711244864548973,
+            "vel_rmse_mm_yr": 0.058572148091826336,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.0
+            },
+            "calibration_ci": {
+              "lo": 1.3592708467897227e-14,
+              "hi": 2.310288489698811e-14
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058524134344393075,
+            "calibration_ratio": 0.6488523223365719,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0023711244864548973,
+            "vel_rmse_mm_yr": 0.058572148091826336,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5620237641530695,
+              "hi": 0.8202548708318754
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9999999999999554,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -1.0,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "ssa": {
+          "naive": {
+            "sigma_reported_median": 0.0123054968940166,
+            "sigma_empirical": 0.05872804874917131,
+            "calibration_ratio": 0.20953355604531707,
+            "coverage_1sigma": 0.1388888888888889,
+            "coverage_2sigma": 0.3333333333333333,
+            "vel_bias_mm_yr": -0.0020081602887986882,
+            "vel_rmse_mm_yr": 0.05876237246427811,
+            "coverage_1sigma_ci": {
+              "lo": 0.027777777777777776,
+              "hi": 0.25
+            },
+            "calibration_ci": {
+              "lo": 0.16082229040117818,
+              "hi": 0.28935807452281165
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.05872804874917131,
+            "calibration_ratio": 0.6465993897444583,
+            "coverage_1sigma": 0.4722222222222222,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0020081602887986882,
+            "vel_rmse_mm_yr": 0.05876237246427811,
+            "coverage_1sigma_ci": {
+              "lo": 0.3055555555555556,
+              "hi": 0.6388888888888888
+            },
+            "calibration_ci": {
+              "lo": 0.5568973673083107,
+              "hi": 0.8184380929054594
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.983982015887075,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.9606568827369135,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "wavelet": {
+          "naive": {
+            "sigma_reported_median": 0.01479835463191773,
+            "sigma_empirical": 0.06148568021174495,
+            "calibration_ratio": 0.24067969291313068,
+            "coverage_1sigma": 0.08333333333333333,
+            "coverage_2sigma": 0.2777777777777778,
+            "vel_bias_mm_yr": -0.003348691529559547,
+            "vel_rmse_mm_yr": 0.06157680249948926,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.19444444444444445
+            },
+            "calibration_ci": {
+              "lo": 0.2064257976075602,
+              "hi": 0.3050691018921135
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.06148568021174495,
+            "calibration_ratio": 0.6175994207321674,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.003348691529559547,
+            "vel_rmse_mm_yr": 0.06157680249948926,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5315925238522474,
+              "hi": 0.7772197484416012
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.906440612982971,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.899244503222339,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "rts": {
+          "naive": {
+            "sigma_reported_median": 6.107037893842579e-08,
+            "sigma_empirical": 0.05931050415083426,
+            "calibration_ratio": 1.0296722277577667e-06,
+            "coverage_1sigma": 0.0,
+            "coverage_2sigma": 0.0,
+            "vel_bias_mm_yr": -0.0027394260350674196,
+            "vel_rmse_mm_yr": 0.05937373457706474,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.0
+            },
+            "calibration_ci": {
+              "lo": 8.832262886219286e-07,
+              "hi": 1.3933765109237157e-06
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.05931050415083426,
+            "calibration_ratio": 0.6402494975514862,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0027394260350674196,
+            "vel_rmse_mm_yr": 0.05937373457706474,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5541265564807027,
+              "hi": 0.8023548321763884
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9999999158283052,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.999999988597012,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "median": {
+          "naive": {
+            "sigma_reported_median": 0.012815343349232174,
+            "sigma_empirical": 0.05892255788619081,
+            "calibration_ratio": 0.21749468809526343,
+            "coverage_1sigma": 0.08333333333333333,
+            "coverage_2sigma": 0.25,
+            "vel_bias_mm_yr": -0.0026821439518977344,
+            "vel_rmse_mm_yr": 0.05898357164524888,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.19444444444444445
+            },
+            "calibration_ci": {
+              "lo": 0.18898838709623386,
+              "hi": 0.2750925587430226
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.05892255788619081,
+            "calibration_ratio": 0.6444649018028545,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0026821439518977344,
+            "vel_rmse_mm_yr": 0.05898357164524888,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5534371291373887,
+              "hi": 0.8173385473927987
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9638842528997681,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.9695034558825965,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "none": {
+          "naive": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058524134344394275,
+            "calibration_ratio": 0.6488523223365585,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0023711244864547,
+            "vel_rmse_mm_yr": 0.05857214809182752,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5620237641530786,
+              "hi": 0.8202548708318235
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058524134344394275,
+            "calibration_ratio": 0.6488523223365585,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0023711244864547,
+            "vel_rmse_mm_yr": 0.05857214809182752,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5620237641530786,
+              "hi": 0.8202548708318235
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.005435773421456119,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.034776140213633205,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet_s20261007": {
+          "naive": {
+            "sigma_reported_median": 0.02111734194331318,
+            "sigma_empirical": 0.25798192946766996,
+            "calibration_ratio": 0.08185589582529107,
+            "coverage_1sigma": 0.027777777777777776,
+            "coverage_2sigma": 0.1388888888888889,
+            "vel_bias_mm_yr": -0.04970626985173151,
+            "vel_rmse_mm_yr": 0.26272683379212525,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.08333333333333333
+            },
+            "calibration_ci": {
+              "lo": 0.06510282931034657,
+              "hi": 0.11829318047465501
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.25798192946766996,
+            "calibration_ratio": 0.14719449753885097,
+            "coverage_1sigma": 0.1111111111111111,
+            "coverage_2sigma": 0.2222222222222222,
+            "vel_bias_mm_yr": -0.04970626985173151,
+            "vel_rmse_mm_yr": 0.26272683379212525,
+            "coverage_1sigma_ci": {
+              "lo": 0.027777777777777776,
+              "hi": 0.2222222222222222
+            },
+            "calibration_ci": {
+              "lo": 0.11701799054292024,
+              "hi": 0.22163739563057056
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9301107904415229,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.9204037244290915,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet_s20261008": {
+          "naive": {
+            "sigma_reported_median": 0.024096355358372804,
+            "sigma_empirical": 0.15378433675640596,
+            "calibration_ratio": 0.15668926931447755,
+            "coverage_1sigma": 0.05555555555555555,
+            "coverage_2sigma": 0.2222222222222222,
+            "vel_bias_mm_yr": -0.01723554906869371,
+            "vel_rmse_mm_yr": 0.15474716922550483,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.1388888888888889
+            },
+            "calibration_ci": {
+              "lo": 0.13321824185947012,
+              "hi": 0.20084034471549025
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.15378433675640596,
+            "calibration_ratio": 0.24692710117966657,
+            "coverage_1sigma": 0.1388888888888889,
+            "coverage_2sigma": 0.4444444444444444,
+            "vel_bias_mm_yr": -0.01723554906869371,
+            "vel_rmse_mm_yr": 0.15474716922550483,
+            "coverage_1sigma_ci": {
+              "lo": 0.027777777777777776,
+              "hi": 0.2777777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.20588411336624607,
+              "hi": 0.32762854496423544
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.8231084747888409,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.9227396650190813,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet": {
+          "naive": {
+            "vel_bias_mm_yr": -0.03347090946021261,
+            "vel_rmse_mm_yr": 0.20873700150881502,
+            "sigma_reported_median": 0.02260684865084299,
+            "sigma_empirical": 0.20588313311203796,
+            "calibration_ratio": 0.11927258256988431,
+            "coverage_1sigma": 0.041666666666666664,
+            "coverage_2sigma": 0.18055555555555555,
+            "_std": {
+              "vel_bias_mm_yr": 0.02296026685570099,
+              "vel_rmse_mm_yr": 0.07635315304530606,
+              "sigma_reported_median": 0.0021064805870343556,
+              "sigma_empirical": 0.07367882438944875,
+              "calibration_ratio": 0.05291518585326937,
+              "coverage_1sigma": 0.019641855032959652,
+              "coverage_2sigma": 0.058925565098878946
+            },
+            "n_train_seeds": 2
+          },
+          "orig": {
+            "vel_bias_mm_yr": -0.03347090946021261,
+            "vel_rmse_mm_yr": 0.20873700150881502,
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.20588313311203796,
+            "calibration_ratio": 0.19706079935925877,
+            "coverage_1sigma": 0.125,
+            "coverage_2sigma": 0.3333333333333333,
+            "_std": {
+              "vel_bias_mm_yr": 0.02296026685570099,
+              "vel_rmse_mm_yr": 0.07635315304530606,
+              "sigma_reported_median": 0.0,
+              "sigma_empirical": 0.07367882438944875,
+              "calibration_ratio": 0.07052160033981086,
+              "coverage_1sigma": 0.019641855032959663,
+              "coverage_2sigma": 0.15713484026367722
+            },
+            "n_train_seeds": 2
+          },
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_orig": NaN
+        }
+      },
+      "imputed": {
+        "linear": {
+          "naive": {
+            "sigma_reported_median": 0.038026104151452564,
+            "sigma_empirical": 0.05867912170989798,
+            "calibration_ratio": 0.6480346508839844,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0026412853357126545,
+            "vel_rmse_mm_yr": 0.0587385368635419,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5604138618304472,
+              "hi": 0.8184067866664767
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.05867912170989798,
+            "calibration_ratio": 0.6471385285865927,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0026412853357126545,
+            "vel_rmse_mm_yr": 0.0587385368635419,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5600477701216826,
+              "hi": 0.8166288611179622
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.0066340407630676385,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.036726335033649825,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "pchip": {
+          "naive": {
+            "sigma_reported_median": 0.03810828516956519,
+            "sigma_empirical": 0.05868546679150941,
+            "calibration_ratio": 0.6493649493315213,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.0029343838404011103,
+            "vel_rmse_mm_yr": 0.058758783352450036,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5601380047461995,
+              "hi": 0.8203613732414474
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.05868546679150941,
+            "calibration_ratio": 0.6470685598702771,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0029343838404011103,
+            "vel_rmse_mm_yr": 0.058758783352450036,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5600229991502473,
+              "hi": 0.8171569513732646
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.008453182864116513,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.03447033906826887,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "ssa": {
+          "naive": {
+            "sigma_reported_median": 0.038002828871544575,
+            "sigma_empirical": 0.058694253942748596,
+            "calibration_ratio": 0.6474710268676931,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0026133726133155616,
+            "vel_rmse_mm_yr": 0.05875240558744712,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.5599876602788403,
+              "hi": 0.8173624739097152
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058694253942748596,
+            "calibration_ratio": 0.6469716868560423,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.0026133726133155616,
+            "vel_rmse_mm_yr": 0.05875240558744712,
+            "coverage_1sigma_ci": {
+              "lo": 0.2222222222222222,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.55947215502556,
+              "hi": 0.8160286163812265
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.006315501777156378,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.036811039948692725,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "mle": {
+          "naive": {
+            "sigma_reported_median": 0.03785117060119701,
+            "sigma_empirical": 0.058070483586608095,
+            "calibration_ratio": 0.6518142826337001,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.002234697814508863,
+            "vel_rmse_mm_yr": 0.05811346606686518,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5631559412056018,
+              "hi": 0.8244855870739566
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.058070483586608095,
+            "calibration_ratio": 0.6539212029371531,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.002234697814508863,
+            "vel_rmse_mm_yr": 0.05811346606686518,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5649728569150981,
+              "hi": 0.8284047791370729
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.005572210588908206,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": -0.03629109842540006,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet_s20261007": {
+          "naive": {
+            "sigma_reported_median": 0.043563866868098586,
+            "sigma_empirical": 0.09936416324001845,
+            "calibration_ratio": 0.4384263445450466,
+            "coverage_1sigma": 0.2777777777777778,
+            "coverage_2sigma": 0.6666666666666666,
+            "vel_bias_mm_yr": -0.01363869744640938,
+            "vel_rmse_mm_yr": 0.10029581748220474,
+            "coverage_1sigma_ci": {
+              "lo": 0.1388888888888889,
+              "hi": 0.4166666666666667
+            },
+            "calibration_ci": {
+              "lo": 0.3695925194111612,
+              "hi": 0.568280238348904
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.09936416324001845,
+            "calibration_ratio": 0.3821651513370095,
+            "coverage_1sigma": 0.25,
+            "coverage_2sigma": 0.6388888888888888,
+            "vel_bias_mm_yr": -0.01363869744640938,
+            "vel_rmse_mm_yr": 0.10029581748220474,
+            "coverage_1sigma_ci": {
+              "lo": 0.1111111111111111,
+              "hi": 0.3888888888888889
+            },
+            "calibration_ci": {
+              "lo": 0.3183140328603146,
+              "hi": 0.5037344951995291
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.5473989383416001,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": 0.09324491398214241,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet_s20261008": {
+          "naive": {
+            "sigma_reported_median": 0.043747417486377414,
+            "sigma_empirical": 0.059032144848425054,
+            "calibration_ratio": 0.7410778923704409,
+            "coverage_1sigma": 0.6111111111111112,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.001957170207647913,
+            "vel_rmse_mm_yr": 0.05906458025438885,
+            "coverage_1sigma_ci": {
+              "lo": 0.4444444444444444,
+              "hi": 0.7777777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.6170111553775147,
+              "hi": 0.9701506444614783
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.059032144848425054,
+            "calibration_ratio": 0.6432685205594403,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.8055555555555556,
+            "vel_bias_mm_yr": -0.001957170207647913,
+            "vel_rmse_mm_yr": 0.05906458025438885,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.5557836972871285,
+              "hi": 0.812725414740845
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.2874834964444364,
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_naive": 0.2162197387886814,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_naive": NaN,
+          "rw_rel_bias_orig": NaN
+        },
+        "unet": {
+          "naive": {
+            "vel_bias_mm_yr": -0.007797933827028647,
+            "vel_rmse_mm_yr": 0.0796801988682968,
+            "sigma_reported_median": 0.043655642177238,
+            "sigma_empirical": 0.07919815404422176,
+            "calibration_ratio": 0.5897521184577437,
+            "coverage_1sigma": 0.4444444444444445,
+            "coverage_2sigma": 0.75,
+            "_std": {
+              "vel_bias_mm_yr": 0.008260087125143598,
+              "vel_rmse_mm_yr": 0.029154887440499846,
+              "sigma_reported_median": 0.0001297898868759431,
+              "sigma_empirical": 0.028519043703636247,
+              "calibration_ratio": 0.214006961803941,
+              "coverage_1sigma": 0.23570226039551587,
+              "coverage_2sigma": 0.11785113019775798
+            },
+            "n_train_seeds": 2
+          },
+          "orig": {
+            "vel_bias_mm_yr": -0.007797933827028647,
+            "vel_rmse_mm_yr": 0.0796801988682968,
+            "sigma_reported_median": 0.03797352048209697,
+            "sigma_empirical": 0.07919815404422176,
+            "calibration_ratio": 0.5127168359482249,
+            "coverage_1sigma": 0.3472222222222222,
+            "coverage_2sigma": 0.7222222222222222,
+            "_std": {
+              "vel_bias_mm_yr": 0.008260087125143598,
+              "vel_rmse_mm_yr": 0.029154887440499846,
+              "sigma_reported_median": 0.0,
+              "sigma_empirical": 0.028519043703636247,
+              "calibration_ratio": 0.18462796296783568,
+              "coverage_1sigma": 0.13749298523071754,
+              "coverage_2sigma": 0.11785113019775798
+            },
+            "n_train_seeds": 2
+          },
+          "wn_rel_bias_orig": 0.005435773421456119,
+          "fn_rel_bias_orig": -0.034776140213633205,
+          "rw_rel_bias_orig": NaN
+        }
+      }
+    },
+    "wn_fn_rw": {
+      "clean": {
+        "raw": {
+          "naive": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06845667921522297,
+            "calibration_ratio": 0.5753825792657339,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008882038782830707,
+            "vel_rmse_mm_yr": 0.06903048270232254,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4939595105140582,
+              "hi": 0.7269558720198394
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06845667921522297,
+            "calibration_ratio": 0.5753825792657339,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008882038782830707,
+            "vel_rmse_mm_yr": 0.06903048270232254,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4939595105140582,
+              "hi": 0.7269558720198394
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.0052842793741701794,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03463227567608017,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 0.9464815827893079,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "mle": {
+          "naive": {
+            "sigma_reported_median": 9.718923592300566e-16,
+            "sigma_empirical": 0.06845667921522654,
+            "calibration_ratio": 1.4197188212627798e-14,
+            "coverage_1sigma": 0.0,
+            "coverage_2sigma": 0.0,
+            "vel_bias_mm_yr": -0.008882038782826661,
+            "vel_rmse_mm_yr": 0.06903048270232555,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.0
+            },
+            "calibration_ci": {
+              "lo": 1.1845803113634026e-14,
+              "hi": 2.1627592670577375e-14
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06845667921522654,
+            "calibration_ratio": 0.5753825792657039,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008882038782826661,
+            "vel_rmse_mm_yr": 0.06903048270232555,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4939595105141044,
+              "hi": 0.7269558720198206
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9999999999999556,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9999999999999998,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": -0.9999999999997016,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "ssa": {
+          "naive": {
+            "sigma_reported_median": 0.01238329602164057,
+            "sigma_empirical": 0.06828651908395988,
+            "calibration_ratio": 0.18134320196369969,
+            "coverage_1sigma": 0.2222222222222222,
+            "coverage_2sigma": 0.3055555555555556,
+            "vel_bias_mm_yr": -0.008936593248362367,
+            "vel_rmse_mm_yr": 0.06886879835956695,
+            "coverage_1sigma_ci": {
+              "lo": 0.08333333333333333,
+              "hi": 0.3611111111111111
+            },
+            "calibration_ci": {
+              "lo": 0.1419196755881491,
+              "hi": 0.25283542760397093
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06828651908395988,
+            "calibration_ratio": 0.5768163494524082,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008936593248362367,
+            "vel_rmse_mm_yr": 0.06886879835956695,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4960634959947464,
+              "hi": 0.7304628140740644
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9804989652845266,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9649583903407893,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 7.0979919309446196,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "wavelet": {
+          "naive": {
+            "sigma_reported_median": 0.014757657031238706,
+            "sigma_empirical": 0.07051931454216782,
+            "calibration_ratio": 0.20927113553286453,
+            "coverage_1sigma": 0.19444444444444445,
+            "coverage_2sigma": 0.3611111111111111,
+            "vel_bias_mm_yr": -0.010714079390122984,
+            "vel_rmse_mm_yr": 0.07132857226017537,
+            "coverage_1sigma_ci": {
+              "lo": 0.08333333333333333,
+              "hi": 0.3333333333333333
+            },
+            "calibration_ci": {
+              "lo": 0.1803988361660852,
+              "hi": 0.264721004377171
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.07051931454216782,
+            "calibration_ratio": 0.5585530845066422,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.6944444444444444,
+            "vel_bias_mm_yr": -0.010714079390122984,
+            "vel_rmse_mm_yr": 0.07132857226017537,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4824343587463556,
+              "hi": 0.7069056957511617
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9224653054924686,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.8789753396579844,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 4.902811974908806,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "rts": {
+          "naive": {
+            "sigma_reported_median": 6.550865699915974e-08,
+            "sigma_empirical": 0.0697349597909357,
+            "calibration_ratio": 9.39394776960561e-07,
+            "coverage_1sigma": 0.0,
+            "coverage_2sigma": 0.0,
+            "vel_bias_mm_yr": -0.008944678010941724,
+            "vel_rmse_mm_yr": 0.07030627199448741,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.0
+            },
+            "calibration_ci": {
+              "lo": 6.441708735372845e-07,
+              "hi": 1.2457506464834617e-06
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.0697349597909357,
+            "calibration_ratio": 0.564835496756704,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.6666666666666666,
+            "vel_bias_mm_yr": -0.008944678010941724,
+            "vel_rmse_mm_yr": 0.07030627199448741,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.48289181264033015,
+              "hi": 0.7132745678407986
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9999999203263292,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9999999988312143,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": -0.9999639008160732,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "median": {
+          "naive": {
+            "sigma_reported_median": 0.012882522696056145,
+            "sigma_empirical": 0.0679757896113211,
+            "calibration_ratio": 0.18951633765075987,
+            "coverage_1sigma": 0.1111111111111111,
+            "coverage_2sigma": 0.3333333333333333,
+            "vel_bias_mm_yr": -0.009454220739490192,
+            "vel_rmse_mm_yr": 0.06863009735585106,
+            "coverage_1sigma_ci": {
+              "lo": 0.027777777777777776,
+              "hi": 0.2222222222222222
+            },
+            "calibration_ci": {
+              "lo": 0.16341163460252572,
+              "hi": 0.23929549318177418
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.0679757896113211,
+            "calibration_ratio": 0.5794530799869061,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.75,
+            "vel_bias_mm_yr": -0.009454220739490192,
+            "vel_rmse_mm_yr": 0.06863009735585106,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.49865083135961535,
+              "hi": 0.7345950948749036
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9585874042799032,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9756918537041677,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 6.11127565599796,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "none": {
+          "naive": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06845667921522297,
+            "calibration_ratio": 0.5753825792657339,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008882038782830707,
+            "vel_rmse_mm_yr": 0.06903048270232254,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4939595105140582,
+              "hi": 0.7269558720198394
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06845667921522297,
+            "calibration_ratio": 0.5753825792657339,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.008882038782830707,
+            "vel_rmse_mm_yr": 0.06903048270232254,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.4939595105140582,
+              "hi": 0.7269558720198394
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.0052842793741701794,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03463227567608017,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 0.9464815827893079,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet_s20261007": {
+          "naive": {
+            "sigma_reported_median": 0.020896962650714817,
+            "sigma_empirical": 0.2546740734785457,
+            "calibration_ratio": 0.08205374958387832,
+            "coverage_1sigma": 0.027777777777777776,
+            "coverage_2sigma": 0.08333333333333333,
+            "vel_bias_mm_yr": -0.05675508873930227,
+            "vel_rmse_mm_yr": 0.2609214897243264,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.08333333333333333
+            },
+            "calibration_ci": {
+              "lo": 0.06598822178308192,
+              "hi": 0.11835799802326659
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.2546740734785457,
+            "calibration_ratio": 0.15466348857902154,
+            "coverage_1sigma": 0.08333333333333333,
+            "coverage_2sigma": 0.16666666666666666,
+            "vel_bias_mm_yr": -0.05675508873930227,
+            "vel_rmse_mm_yr": 0.2609214897243264,
+            "coverage_1sigma_ci": {
+              "lo": 0.0,
+              "hi": 0.16736111111111046
+            },
+            "calibration_ci": {
+              "lo": 0.12420697215515333,
+              "hi": 0.2312704611144318
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.9344016655312868,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9123821338926886,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 13.126840562142835,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet_s20261008": {
+          "naive": {
+            "sigma_reported_median": 0.023990132247540923,
+            "sigma_empirical": 0.1521739213266897,
+            "calibration_ratio": 0.15764943190258257,
+            "coverage_1sigma": 0.1111111111111111,
+            "coverage_2sigma": 0.16666666666666666,
+            "vel_bias_mm_yr": -0.023386999173224163,
+            "vel_rmse_mm_yr": 0.15396056008689346,
+            "coverage_1sigma_ci": {
+              "lo": 0.027777777777777776,
+              "hi": 0.2222222222222222
+            },
+            "calibration_ci": {
+              "lo": 0.1341476029018351,
+              "hi": 0.19934049533109
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.1521739213266897,
+            "calibration_ratio": 0.2588405444994836,
+            "coverage_1sigma": 0.16666666666666666,
+            "coverage_2sigma": 0.25,
+            "vel_bias_mm_yr": -0.023386999173224163,
+            "vel_rmse_mm_yr": 0.15396056008689346,
+            "coverage_1sigma_ci": {
+              "lo": 0.05555555555555555,
+              "hi": 0.3055555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.2165400984903523,
+              "hi": 0.3379469789799026
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.8136893014507152,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.9351361910534737,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 13.41506342442024,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet": {
+          "naive": {
+            "vel_bias_mm_yr": -0.040071043956263215,
+            "vel_rmse_mm_yr": 0.20744102490560992,
+            "sigma_reported_median": 0.022443547449127868,
+            "sigma_empirical": 0.20342399740261768,
+            "calibration_ratio": 0.11985159074323044,
+            "coverage_1sigma": 0.06944444444444445,
+            "coverage_2sigma": 0.125,
+            "_std": {
+              "vel_bias_mm_yr": 0.02359480240741391,
+              "vel_rmse_mm_yr": 0.07563279866864599,
+              "sigma_reported_median": 0.0021872011972757987,
+              "sigma_empirical": 0.07247855265923027,
+              "calibration_ratio": 0.05345421959597977,
+              "coverage_1sigma": 0.05892556509887896,
+              "coverage_2sigma": 0.05892556509887896
+            },
+            "n_train_seeds": 2
+          },
+          "orig": {
+            "vel_bias_mm_yr": -0.040071043956263215,
+            "vel_rmse_mm_yr": 0.20744102490560992,
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.20342399740261768,
+            "calibration_ratio": 0.20675201653925257,
+            "coverage_1sigma": 0.125,
+            "coverage_2sigma": 0.20833333333333331,
+            "_std": {
+              "vel_bias_mm_yr": 0.02359480240741391,
+              "vel_rmse_mm_yr": 0.07563279866864599,
+              "sigma_reported_median": 0.0,
+              "sigma_empirical": 0.07247855265923027,
+              "calibration_ratio": 0.07366430268540891,
+              "coverage_1sigma": 0.05892556509887896,
+              "coverage_2sigma": 0.05892556509887897
+            },
+            "n_train_seeds": 2
+          },
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_orig": 0.9464815827893079
+        }
+      },
+      "imputed": {
+        "linear": {
+          "naive": {
+            "sigma_reported_median": 0.03925498834415551,
+            "sigma_empirical": 0.06848021325021801,
+            "calibration_ratio": 0.5732311054687105,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009124273901240166,
+            "vel_rmse_mm_yr": 0.06908539629342939,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5833333333333334
+            },
+            "calibration_ci": {
+              "lo": 0.49354132423248587,
+              "hi": 0.72618485241477
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06848021325021801,
+            "calibration_ratio": 0.5751848422390324,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009124273901240166,
+            "vel_rmse_mm_yr": 0.06908539629342939,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5833333333333334
+            },
+            "calibration_ci": {
+              "lo": 0.4944075605117399,
+              "hi": 0.7275709235927101
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.006853456902958712,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03650059851628177,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 0.9782657277274591,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "pchip": {
+          "naive": {
+            "sigma_reported_median": 0.03955590543169184,
+            "sigma_empirical": 0.06848464249454475,
+            "calibration_ratio": 0.5775879670371752,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009366718914745645,
+            "vel_rmse_mm_yr": 0.0691222227712149,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5833333333333334
+            },
+            "calibration_ci": {
+              "lo": 0.49527530943212283,
+              "hi": 0.7308764876620669
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06848464249454475,
+            "calibration_ratio": 0.5751476421587441,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009366718914745645,
+            "vel_rmse_mm_yr": 0.0691222227712149,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5833333333333334
+            },
+            "calibration_ci": {
+              "lo": 0.49390173726477743,
+              "hi": 0.7275116222152743
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.008249355473382451,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03479058844428614,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 1.0587178692390768,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "ssa": {
+          "naive": {
+            "sigma_reported_median": 0.03947611176540777,
+            "sigma_empirical": 0.06851520022413536,
+            "calibration_ratio": 0.5761657506110857,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009081774577122163,
+            "vel_rmse_mm_yr": 0.06911447960610728,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.49428163825401056,
+              "hi": 0.7266645551002837
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06851520022413536,
+            "calibration_ratio": 0.5748911267276241,
+            "coverage_1sigma": 0.3888888888888889,
+            "coverage_2sigma": 0.7222222222222222,
+            "vel_bias_mm_yr": -0.009081774577122163,
+            "vel_rmse_mm_yr": 0.06911447960610728,
+            "coverage_1sigma_ci": {
+              "lo": 0.24930555555555559,
+              "hi": 0.5277777777777778
+            },
+            "calibration_ci": {
+              "lo": 0.49417362067205417,
+              "hi": 0.7274585521573934
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.006486499569224325,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03665020267740006,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 1.0096849123292675,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "mle": {
+          "naive": {
+            "sigma_reported_median": 0.039095990024459015,
+            "sigma_empirical": 0.06805569253996208,
+            "calibration_ratio": 0.5744705338425875,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.75,
+            "vel_bias_mm_yr": -0.008592520925516656,
+            "vel_rmse_mm_yr": 0.06859598168223334,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.49375246774732334,
+              "hi": 0.7279488878611725
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06805569253996208,
+            "calibration_ratio": 0.5787727548535779,
+            "coverage_1sigma": 0.4444444444444444,
+            "coverage_2sigma": 0.75,
+            "vel_bias_mm_yr": -0.008592520925516656,
+            "vel_rmse_mm_yr": 0.06859598168223334,
+            "coverage_1sigma_ci": {
+              "lo": 0.2777777777777778,
+              "hi": 0.6111111111111112
+            },
+            "calibration_ci": {
+              "lo": 0.49717098006762267,
+              "hi": 0.7293172186880571
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": -0.0065600011939641505,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": -0.03495357813196612,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 0.9218011289615693,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet_s20261007": {
+          "naive": {
+            "sigma_reported_median": 0.04375334254457219,
+            "sigma_empirical": 0.10207239336465007,
+            "calibration_ratio": 0.42865010902864686,
+            "coverage_1sigma": 0.25,
+            "coverage_2sigma": 0.6388888888888888,
+            "vel_bias_mm_yr": -0.019966301733266325,
+            "vel_rmse_mm_yr": 0.10400685887042112,
+            "coverage_1sigma_ci": {
+              "lo": 0.1111111111111111,
+              "hi": 0.3888888888888889
+            },
+            "calibration_ci": {
+              "lo": 0.36310499938713076,
+              "hi": 0.5482162739276054
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.10207239336465007,
+            "calibration_ratio": 0.385890634641111,
+            "coverage_1sigma": 0.16666666666666666,
+            "coverage_2sigma": 0.5,
+            "vel_bias_mm_yr": -0.019966301733266325,
+            "vel_rmse_mm_yr": 0.10400685887042112,
+            "coverage_1sigma_ci": {
+              "lo": 0.05555555555555555,
+              "hi": 0.3055555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.3214895678749451,
+              "hi": 0.5001776333589129
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.55521240436843,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": 0.08367261569630503,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 3.0321963619558163,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet_s20261008": {
+          "naive": {
+            "sigma_reported_median": 0.04480143883341674,
+            "sigma_empirical": 0.06855787486374301,
+            "calibration_ratio": 0.6534834827138155,
+            "coverage_1sigma": 0.4722222222222222,
+            "coverage_2sigma": 0.8333333333333334,
+            "vel_bias_mm_yr": -0.00811519898009452,
+            "vel_rmse_mm_yr": 0.06903650237605591,
+            "coverage_1sigma_ci": {
+              "lo": 0.3055555555555556,
+              "hi": 0.6388888888888888
+            },
+            "calibration_ci": {
+              "lo": 0.5529294170134952,
+              "hi": 0.8352332159590821
+            },
+            "n": 36
+          },
+          "orig": {
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.06855787486374301,
+            "calibration_ratio": 0.5745332791179149,
+            "coverage_1sigma": 0.4166666666666667,
+            "coverage_2sigma": 0.75,
+            "vel_bias_mm_yr": -0.00811519898009452,
+            "vel_rmse_mm_yr": 0.06903650237605591,
+            "coverage_1sigma_ci": {
+              "lo": 0.25,
+              "hi": 0.5555555555555556
+            },
+            "calibration_ci": {
+              "lo": 0.4932728325526192,
+              "hi": 0.7239510246429627
+            },
+            "n": 36
+          },
+          "wn_rel_bias_naive": 0.286127964767125,
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_naive": 0.2177731182145998,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_naive": 1.3694415437955,
+          "rw_rel_bias_orig": 0.9464815827893079
+        },
+        "unet": {
+          "naive": {
+            "vel_bias_mm_yr": -0.014040750356680422,
+            "vel_rmse_mm_yr": 0.0865216806232385,
+            "sigma_reported_median": 0.04427739068899446,
+            "sigma_empirical": 0.08531513411419654,
+            "calibration_ratio": 0.5410667958712312,
+            "coverage_1sigma": 0.3611111111111111,
+            "coverage_2sigma": 0.7361111111111112,
+            "_std": {
+              "vel_bias_mm_yr": 0.008379995121306346,
+              "vel_rmse_mm_yr": 0.02472777621767666,
+              "sigma_reported_median": 0.0007411159931784364,
+              "sigma_empirical": 0.023698343300193388,
+              "calibration_ratio": 0.1589812031698318,
+              "coverage_1sigma": 0.15713484026367722,
+              "coverage_2sigma": 0.13749298523071762
+            },
+            "n_train_seeds": 2
+          },
+          "orig": {
+            "vel_bias_mm_yr": -0.014040750356680422,
+            "vel_rmse_mm_yr": 0.0865216806232385,
+            "sigma_reported_median": 0.039388780654821945,
+            "sigma_empirical": 0.08531513411419654,
+            "calibration_ratio": 0.4802119568795129,
+            "coverage_1sigma": 0.2916666666666667,
+            "coverage_2sigma": 0.625,
+            "_std": {
+              "vel_bias_mm_yr": 0.008379995121306346,
+              "vel_rmse_mm_yr": 0.02472777621767666,
+              "sigma_reported_median": 0.0,
+              "sigma_empirical": 0.023698343300193388,
+              "calibration_ratio": 0.13339049313051102,
+              "coverage_1sigma": 0.1767766952966369,
+              "coverage_2sigma": 0.1767766952966369
+            },
+            "n_train_seeds": 2
+          },
+          "wn_rel_bias_orig": 0.0052842793741701794,
+          "fn_rel_bias_orig": -0.03463227567608017,
+          "rw_rel_bias_orig": 0.9464815827893079
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+\section{Conclusions}
+\label{sec:conclusion}
+
+The question this benchmark asks is whether a learned method should replace a
+well-implemented classical one in the GNSS coordinate-series pipeline. The
+answer is task-specific, and the first version's uniform negative verdict does
+not survive a protocol that removes three confounds: a truth inside the
+parametric basis, a normalisation mismatch at inference, and a downstream noise
+model re-estimated on denoised output.
+
+Denoising is conditional on the truth family. The trajectory model and the RTS
+smoother remove about four-fifths of the injected error when the truth is a
+trend plus constant harmonics, but they add error when it is not. The learned
+denoiser is nearly family-invariant, $0.366 \pm 0.002$ in-family and
+$0.363 \pm 0.001$ out-of-family, and under per-window inference it beats every
+model-free decomposition in both families; it stays well below the parametric
+estimator when the truth lies in its basis. The earlier placement of the U-Net
+below SSA and the wavelet came from whole-series normalisation at inference, not
+from the network.
+
+Gap filling is the task where a learned method gains the most under the
+revised protocol, but the gain is confined to synthetic records; on real data
+the learned filler is at parity at best. With per-window inference, which
+matches the statistics used in
+training, the U-Net is the best method at 30-day synthetic gaps ($3.07$ against
+$3.34$~mm for linear interpolation). On the full held-out set of 201 component
+series it reaches $2.964$~mm on NGL against $2.967$ for linear interpolation, a
+tie, and $3.293$ on JPL against $3.233$, $0.06$~mm behind; by region it is
+ahead only in Asia and Europe. It is slightly behind SSA at 5 days and behind
+the trajectory model at 120 days. A TCN and the smaller BiGRU match or beat it
+at 5 and 30 days, so the advantage is not specific to the encoder--decoder
+design, though the BiGRU costs two orders of magnitude more to train. The
+earlier failure was an inference defect, not an architectural limit; the
+corrected result is a competitive learned method at intermediate gaps, not a
+demonstrated improvement over interpolation on real data.
+
+Offset detection remains a classical win at the operating point. The learned
+field has higher average precision at large offsets, but its validation-selected
+$F_1$ is lower at every amplitude, and on real catalogue labels it trails the
+classical detector: $0.457 \pm 0.027$ for the classical arm, $0.232 \pm 0.107$
+for the twenty U-Net seeds and $0.273 \pm 0.096$ for the ten TCN seeds, with
+four of the thirty seeds collapsing. The TCN is ahead of the U-Net, so the
+negative detection verdict does not depend on one architecture, but it is still
+below the classical detector. The seed spread is part of the result, not noise
+to be averaged away.
+
+The velocity product narrows the case for learned pre-processing without
+reversing it. Under protocol-matched inference no method improves the velocity:
+the untreated series and classical denoisers sit at
+$0.0586$--$0.0616$~mm\,yr$^{-1}$, the learned denoiser at $0.0605$ and the
+learned imputer at $0.0586$. Calibration is likewise preserved
+($0.618$--$0.649$ across methods). The earlier factor-of-$3.6$ degradation and
+the calibration collapse to $0.197$ were produced by whole-series
+normalisation, and they disappear when the network is scored window by window.
+The random-walk arm lowers absolute accuracy for every method without changing
+the ordering. The practical recommendation is therefore narrower than before:
+neither learned nor classical denoising is a substitute for a joint
+trajectory/noise fit upstream of a published velocity, and a learned gap filler
+is a defensible alternative at 30-day synthetic gaps but has not shown an
+advantage over linear interpolation on the full held-out real set. Learned
+pre-processing carries no product-level penalty. The remaining product-level objection is that
+it carries no gain either.
+
+Two methodological lessons carry beyond this benchmark. A normalisation
+mismatch between training and inference can mimic a capacity failure, so learned
+pipelines must be scored under the protocol they were trained with before a
+negative result is attributed to the model. And a downstream calibration
+comparison is only as meaningful as the noise model attached to each method;
+re-estimating that model on a denoised output is not a valid protocol, because
+the denoiser has removed the information the estimator needs.
+
+What remains open is a truth observed rather than constructed, a multi-station
+treatment of common-mode error, and a learned detector trained and validated on
+real catalogue labels with a pre-registered operating point. The benchmark and
+its result files make those extensions measurable on the same frozen split.

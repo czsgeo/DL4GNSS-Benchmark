@@ -1,0 +1,11 @@
+{
+  "exp_id": "exp-20261018-station-noise",
+  "description": "Recover WN/FN/RW amplitudes from every benchmark series to document the empirical noise range against which the injected levels are set (JG v2.0 data-section evidence).",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "components": [0, 1, 2],
+  "models": ["wn", "fn", "rw"],
+  "dt": 0.0027378507871321013,
+  "design_orders": [1, 2],
+  "design_poly": 2,
+  "seed": 20261018
+}

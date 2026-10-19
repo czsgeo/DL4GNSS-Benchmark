@@ -1,0 +1,52 @@
+{
+  "exp_id": "exp-20261008-data-prep",
+  "n_stations_kept": 321,
+  "n_series_kept": 333,
+  "n_jpl": 35,
+  "n_ngl": 298,
+  "span_years": {
+    "min": 5.871232876712384,
+    "median": 30.031499999999824,
+    "max": 30.64469999999983
+  },
+  "completeness": {
+    "min": 0.5000831064088351,
+    "median": 0.9718619500339507,
+    "max": 0.9969826458781221
+  },
+  "split": {
+    "train": {
+      "series": 198,
+      "stations": 193
+    },
+    "val": {
+      "series": 68,
+      "stations": 64
+    },
+    "test": {
+      "series": 67,
+      "stations": 64
+    }
+  },
+  "t_begin": 1994.0014,
+  "t_end": 2024.6461,
+  "manifest": {
+    "created": "2026-10-07T21:03:03",
+    "ngl_frame": "IGS14",
+    "ngl_selection": {
+      "target_n": 300,
+      "min_solutions": 4000,
+      "t_begin_max_year": 2009.0,
+      "t_end_min_year": 2024.0,
+      "min_span_years": 15.0
+    },
+    "ngl_targets_n": 300,
+    "ngl_downloaded_n": 300,
+    "jpl_source": {
+      "path": "D:/Server/AiFoundation/CcForPaper-v1.8.0-win-JPL \u9010\u65e5\u89e3\u566a\u58f0/paper-workspace/experiments/exp-20261005-jpl-sinex/data/clean_jpl.npz",
+      "sha256": "d6f628fe63e83cbb9e43f162f9505310139c22c7aa5c997f7215607c3d062407"
+    },
+    "ngl_holdings_sha256": "3d0bbaef980b5476656c400f2ebc94f0475082d886554d77812a380f950de472",
+    "ngl_targets_sha256": "90fd6c3de3caed72d632150f108ac47768e829d0102fdedcb3f2437a819f73fe"
+  }
+}

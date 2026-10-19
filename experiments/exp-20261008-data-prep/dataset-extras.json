@@ -1,0 +1,14 @@
+{
+  "_comment": "Derived from experiments/exp-20261008-data-prep/data/series.npz (the frozen dataset), added 2026-10-09 to register figures the v1.0 results.json did not expose: the per-source record-span ranges that resolve the NGL eligibility / minimum-span apparent contradiction (review ds-6), and the combined time span. results.json itself is NOT touched so its locked sha256 stays valid.",
+  "source_data": "experiments/exp-20261008-data-prep/data/series.npz",
+  "n_jpl": 35,
+  "n_ngl": 298,
+  "jpl_span_min_yr": 5.87,
+  "jpl_span_median_yr": 9.65,
+  "jpl_span_max_yr": 9.66,
+  "ngl_span_min_yr": 23.52,
+  "ngl_span_median_yr": 30.11,
+  "ngl_span_max_yr": 30.64,
+  "t_begin_year_min": 1994.001,
+  "t_end_year_max": 2024.646
+}

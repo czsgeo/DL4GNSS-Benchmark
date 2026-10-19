@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.log
+*.npz
+*.pt
+*.pth
+build/
+docx-build/
+experiments/*/data/ngl/
+experiments/*/data/ngl_holdings.txt
+experiments/*/catalog/
+experiments/*/nets/
+experiments/*/partial_*.json
+outputs/
+
+experiments/*/logs/

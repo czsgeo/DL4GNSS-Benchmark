@@ -1,0 +1,21 @@
+{
+  "exp_id": "exp-20261009-detector-fair",
+  "description": "Review M3: put the classical and learned offset detectors on the same footing. Both are reduced to a decision field (the classical two-sample step statistic; the network's output) and read out by the same threshold+min-separation rule, so full precision-recall curves can be compared. Reports AP, F1 at each method's F1-optimal threshold, F1 at matched recall, and -- for the learned detector -- the cost of selecting its threshold on a held-out validation fold. The detector's training-seed distribution is estimated over 20 seeds.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "use_split": "test",
+  "max_stations": 12,
+  "components": [0, 1, 2],
+  "amplitudes_mm": [2, 4, 8, 16, 25],
+  "n_offsets": 3,
+  "n_realisations": 3,
+  "tol_days": 30,
+  "min_sep_days": 45,
+  "min_sep_years": 1.5,
+  "thresholds": [2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.5, 9.0, 11.0, 13.0, 16.0, 20.0, 25.0, 30.0],
+  "matched_recall_targets": [0.5, 0.7, 0.9],
+  "val_splits": 20,
+  "nets_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "noise": {"sigma_wn_mm": 1.5, "sigma_fn_mm": 3.0, "sigma_rw_mm": 0.0},
+  "seed": 20261007
+}

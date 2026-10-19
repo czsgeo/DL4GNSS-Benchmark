@@ -1,0 +1,66 @@
+{
+  "exp_id": "exp-20261018-nonparam-signals",
+  "description": "JG v2.0 revision (ZQH comment 1.1): break the ground-truth circularity. The injected truth leaves the constant-harmonic trajectory basis (multi-year seasonal amplitude modulation, long-lived transients, logarithmic relaxation). Each regime is scored with the 10 learned seeds trained on its own truth family (in-family nets on in-family truth, out-of-family nets on out-of-family truth) and 5 independent noise realisations per station/component, hybrid and fully synthetic. Denoising is scored under both normalisation arms; the per-window arm is the protocol-matched primary result.",
+  "dataset": "experiments/exp-20261008-data-prep/data/series.npz",
+  "split_file": "experiments/exp-20261008-data-prep/data/split.json",
+  "use_split": "test",
+  "max_stations": 8,
+  "components": [
+    0,
+    1,
+    2
+  ],
+  "n_seeds": 5,
+  "noise": {
+    "sigma_wn_mm": 1.5,
+    "sigma_fn_mm": 3.0,
+    "sigma_rw_mm": 0.0
+  },
+  "noise_rw": {
+    "sigma_wn_mm": 1.5,
+    "sigma_fn_mm": 3.0,
+    "sigma_rw_mm": 0.5
+  },
+  "synth": {
+    "n_days": 3650,
+    "trend": 15.0,
+    "A1": 6.0,
+    "A2": 2.0,
+    "am_in": 0.35,
+    "am_oof": 0.9,
+    "fm": 0.1,
+    "n_synth": 30
+  },
+  "nets_dir": "experiments/exp-20261009-dl-seeds/nets",
+  "regimes": [
+    {
+      "name": "hybrid_in",
+      "family": "in",
+      "base": "hybrid",
+      "noise_key": "noise"
+    },
+    {
+      "name": "hybrid_oof",
+      "family": "oof",
+      "base": "hybrid",
+      "noise_key": "noise"
+    },
+    {
+      "name": "synth_in",
+      "family": "in",
+      "base": "synth",
+      "noise_key": "noise"
+    },
+    {
+      "name": "synth_oof",
+      "family": "oof",
+      "base": "synth",
+      "noise_key": "noise"
+    }
+  ],
+  "seed": 20261007,
+  "inference_arms": {
+    "global": "whole-series standardisation (v1 protocol); results.json",
+    "perwin": "per-window standardisation matching training; results_perwin.json"
+  }
+}
